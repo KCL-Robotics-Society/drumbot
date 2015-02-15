@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Media Exporting</title>
+	</head>
+
+	<body>
+		<h1>Exportation de media</h1>
+		<p>QMidi vous permet d'exporter des media en différents formats, en choisissant &quot;Exporter fichier courant...&quot; dans le menu &quot;Ficher&quot;. Les modifications de tempo et de hauteur sont automatiquement appliquées aux fichiers exportés. Les formats d'exportation disponibles dépendent du type fichier à exporter.</p>
+		<h2>MIDI vers n'importe quel fichier</h2>
+		<h3>Sauvegarder le mix</h3>
+		<p>Le mixage actuel est sauvegardé dans le fichier. Le mixage est &quot;statique&quot;; donc toute automation présente auparavant sera perdue.</p>
+		<h3>Supprimer canaux muets</h3>
+		<p>Les événements MIDI sur des canaux muets seront ignorés.</p>
+		<h2>MIDI vers MIDI</h2>
+		<h3><a id="merge" name="merge"></a>Fusionner texte</h3>
+		<p>Cette option n'est disponible que si du texte externe est synchronisé avec le morceau courant. Elle vous permet &quot;d'inclure&quot; le texte synchronisé dans le fichier de destination (comme des meta événements de paroles).</p>
+		<h2>N'importe quel fichier vers Audio</h2>
+		<p>Le format audio exporté peut être AIFF, WAVE, AAC ou Apple Lossless. Le fichier audio est rendu en utilisant le  <a href="02_midi_settings.html#DLS">SoundFont</a> séléctionné dans la fenêtre &quot;Syntétiseur&quot;.    </p>
+	<h3>Fusionner texte (MP3 seulement)</h3>
+    <p>Cette option n'est disponible que si du texte externe est synchronisé avec le morceau courant. Elle vous permet &quot;d'inclure&quot; le texte synchronisé dans le fichier de destination (comme tag SYLT ID3).</p>
+        <p><span class="notabene">NB: Le format MP3 est disponible uniquement si le fichier source est déjà au format MP3 et aucun traitement audio (hauteur/tempo) n'est nécessaire.</span><br />
+        </p>
+<h2>AUDIO/MIDI vers film QuickTime</h2>
+		<p>S'il y a du contenu visuel (texte karaoké, CDG), celui-ci sera exporté sur la piste vidéo du film. Dans le cas contraire, le film ne contiendra que la piste audio.</p>
+		<ul>
+			<li>Du texte karaoké peut être sauvegardé en utilisant différentes résolutions (y compris la taille actuelle de la fenêtre karaoké).</li>
+			<li>Les graphiques CDG sont toujours sauvegardés dans leur résolution native (300 x 216 pixels).</li>
+		</ul>
+	<h2>Texte Karaoké vers LRC et ChordPro</h2>
+		<p>Vous pouvez ici exporter votre texte karaoké vers les formats <a href="http://fr.wikipedia.org/wiki/LRC_(informatique)">LRC, LRC étendu</a> et <a href="http://webchord.sourceforge.net">ChordPro</a>.
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: white;
+	margin-right: 18px;
+	margin-left: 18px;
+	   }
+
+p          { color: black; font-weight: normal; font-size: 9pt; line-height: 12pt; text-decoration: none ; margin-left: 40px; }
+table          { color: black; font-weight: normal; font-size: 9pt; line-height: 12pt; text-decoration: none ; margin-left: 40px; border-collapse:collapse;
+}
+table,th, td
+{
+border: 1px solid black;
+}
+th
+{
+	background-color:#E5EDF7;
+}
+h1              {
+	font-size: 18pt;
+	margin-top: 20px;
+	padding-bottom: 4px;
+	color: #210091;
+	    }
+
+
+h2       { font-size: 12pt; color: #210091;
+	   }
+h3 { color: #333; font-size: 9pt; margin-bottom: -6px ; margin-left: 10px; }
+h4 { color: #333; font-size: 9pt; margin-bottom: -6px; margin-left: 40px; }
+a      { 
+	color: blue; 
+	line-height: 11pt;}
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;}
+
+ul    { list-style-type: disc; list-style-position: inside; }
+li     { font-size: 9pt; margin-top: 4px; list-style-position: outside; }
+.notabene { background-color: #fffc8f; }
+#smiley { margin-right: 3px; margin-bottom: -5px; }
+.plainText { font-weight: normal; }
+.qmidipro { background-color: #dfffbe; }

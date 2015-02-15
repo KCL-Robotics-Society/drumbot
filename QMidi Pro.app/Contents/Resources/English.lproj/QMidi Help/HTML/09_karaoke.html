@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Karaoke</title>
+	</head>
+
+	<body>
+		<h1>Karaoke</h1>
+		<h2>Text Formatting</h2>
+		<p>You can easily format the karaoke text font/size/color using the font panel (&quot;Show Fonts&quot; from the &quot;Karaoke/Font&quot; menu). Formatting is applied to both text and chords. Chords visibility can be toggled with the &quot;Karaoke/Chords&quot; menu item.</p>
+		<h3>Auto Size</h3>
+		<p>If the &quot;Auto Size&quot; option is checked, QMidi resizes the text accordingly to the window height so that a constant number of lines are viewed. The chords can then be independently sized by dragging the text/chord divider.</p>
+		<h3>Rich text<span class="plainText"> (External text only)</span></h3>
+		<p>If this option is unchecked (default) lyrics are saved as plain text and lyrics are formatted &quot;on the fly&quot; using the current karaoke/mirror style.<br />
+			If this option is checked, text is saved in rich text format (&quot;rtf&quot; or &quot;rtfd&quot;). You can format rich text in Editing mode only.</p>
+		<p>NB: When opened, styled text with the same color as background is automatically set to white/black, depending on the background color.</p>
+		<h2>Background Image</h2>
+		<p>With the &quot;Karaoke/Background Image&quot; menu, you can add a background image to your karaoke window. You may also drag an image from the finder to do this.</p>
+		<p>You may also link an image to any media file:</p>
+		<ol>
+			<li>Copy the image file to the media file's directory.</li>
+			<li>Rename it as the media file name + extension (jpeg, jpg, png, tiff or tif).</li>
+		</ol>
+		<h2>Text Encoding</h2>
+		<p>If a karaoke file has been created on other platforms, accented characters are not displayed correctly using the standard Macintosh encoding. To fix this problem, QMidi allows you to choose the appropriate text encoding for any karaoke file and to save your settings within the playlist/library. You can change the default encoding in the <a href="12_preferences.html">Preferences</a> dialog.</p>
+		<h2><a id="editing" name="editing"></a>Adding/Editing Lyrics and chords</h2>
+	<h3>Adding New Lyrics	</h3>
+	<ol>
+<li>Choose &quot;Edit&quot; from the &quot;Karaoke&quot; menu (karaoke window must be frontmost).</li>
+			<li>Type/Paste your text. You may also use the &quot;Lyrics Finder&quot; window to find and insert lyric.</li>
+			<li>Save your work by choosing &quot;Save&quot; from the file menu.</li>
+	</ol>
+<p>During this operation, a text file will be created with the same name of your media file plus the appropriate extension (txt, rtf, rtfd) in the media file's directory.</p>
+		<p><img src="../images/ExternalText.png" alt="" border="0" /></p>
+		<h3>Modifying Synced Lyrics/Chords</h3>
+<p><span>You should never edit synced text in &quot;Edit&quot; mode because this will invalidate sync information. The safe way to edit existing text is the following:</span></p>
+		<ol>
+			<li><span>Choose &quot;Sync&quot; </span>from the &quot;Karaoke&quot; menu.<span> </span></li>
+			<li>Click the &quot;Chords&quot; button at bottom if you wish to work on the chords.</li>
+			<li>Click the &quot;pencil&quot; button at bottom to enable manual editing<span>.</span></li>
+			<li><span>Double click the text column to edit its content.</span> <span class="notabene">Chords must be  properly formatted! (see  &quot;<a href="13_chords.html">Chords</a>&quot;)</span>.</li>
+		</ol>
+<p><img src="../images/manual_edit.png" alt="" border="0" /></p>
+		<p>The &quot;CR&quot; column is used to add/remove line breaks.</p>
+		<p>The behavior of the &quot;+&quot; button depends on the current selection state:</p>
+		<ul>
+			<li>If a row is selected, it will be duplicated. If the &quot;Text&quot; column is being edited, the text will be split at cursor position.</li>
+			<li>If no rows are selected (command-click on any selected row to unselect it), an empty row will be added at the end.</li>
+		</ul>
+		<h3>Adding New Lyrics/Chords in Sync mode by Pasting.</h3>
+        <ol>
+          <li>Choose &quot;Sync&quot; from the &quot;Karaoke&quot; menu.</li>
+          <li>Paste your text. Every line of text will create a sync event.</li>
+          </ol>
+        <ul>
+          <li>If a row is selected, the events willl be inserted before the selection.</li>
+          <li>If no rows are selected (command-click on any selected row to unselect it), the events will be added at the end.</li>
+          <li>If you are working on chords, only valid chords will be accepted  (see &quot;<a href="13_chords.html">Chords</a>&quot;) .</li>
+        </ul>
+    <h3>Editing Embedded Lyrics/Chords</h3>
+<p><span>QMidi does not allow direct editing of embedded MIDI/ID3 lyrics (<a href="http://www.mixagesoftware.com/">MidiKit</a> can do this on MIDI files).</span></p>
+		<p><span>Therefore, if you choose &quot;Sync&quot; from the &quot;Karaoke&quot; menu, a text file will be automatically created. </span><span>If the &quot;Quantize sync to lines&quot; option is checked, QMidi will only keep sync markers pointing to lines. </span></p>
+		<p>If you are working on a MIDI file, you'll be able to merge the edited text later by choosing &quot;Export Current&quot; and checking the &quot;Merge Text&quot; option.</p>
+		<h2>Syncing Lyrics and Chords</h2>
+		<h3>Real time syncing</h3>
+		<ol>
+			<li>Choose “Sync” from the “Karaoke” menu to enter synchronize mode.</li>
+			<li>Click the &quot;smiley&quot; <img id="smiley" src="../images/smile.png" name="smiley" border="0" /> button at bottom to enable sync mode.</li>
+			<li>Start Playing.</li>
+			<li>Click the row you want to synchronize at the desired time (press the Return key to advance one line).</li>
+			<li>Choose “Display” from the “Karaoke” menu to exit synchronize mode.</li>
+			<li>To save your work, choose “Save” from the “File” menu.</li>
+		</ol>
+		<p>You can of course do step 4 while the player is stopped. It is not necessary to synchronize the entire text at once: you can adjust the row's position at any time by rewinding and clicking it at the right time. All these actions may be undone using the &quot;Edit/Undo&quot; menu.</p>
+		<p>Tip: Option-Click a row to move the playhead at the corresponding time.</p>
+		<h3>Manual Sync Editing</h3>
+		<p>Enter the synchronize mode and click the &quot;Edit&quot; (pencil) button to enable manual editing.</p>
+		<p><img src="../images/manual_sync.png" alt="" border="0" /></p>
+		<p>The &quot;Time&quot; column is formatted as measure:beat:tick for MIDI files and HH:MM:SS.hundredthsecond for any other media.</p>
+	</body>
+
+</html>

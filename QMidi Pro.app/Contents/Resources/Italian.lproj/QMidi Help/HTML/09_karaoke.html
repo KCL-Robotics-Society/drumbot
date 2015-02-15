@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Karaoke</title>
+	</head>
+
+	<body>
+		<h1>Karaoke</h1>
+		<h2>Formattazione del testo</h2>
+		<p>Si possono facilmente cambiare i vari attributi del testo karaoke tramite il pannello Font (&quot;Mostra Font&quot; dal menu &quot;Karaoke/Font&quot;). La formattazione viene applicata a testo e accordi. La visibilità degli accordi si cambia dal menu &quot;Karaoke/Accordi&quot;.</p>
+		<h3>Adatta dimensione</h3>
+		<p>Se il checkbox &quot;Adatta Dim&quot; è spuntato, QMidi ridimensiona il testo a seconda dell'altezza della finestra in modo che un numero specificato di righe siano visibili. In questo caso gli accordi possono essere ridimensionati proporzionalmente trascinando la linea che suddivide testo e accordi.</p>
+		<h3>RTF<span class="plainText"> (solo testo esterno)</span></h3>
+		<p>Se questa opzione è disattivata (default) il testo utilizza la formattazione della finestra karaoke/mirror.<br />Se questa opzione è selezionata, il testo e i suoi attributti verrano salvati in formato RTF (o &quot;RTFD&quot;). In questo caso è possibile formattare il testo solo in modalità &quot;Modifica&quot;.</p>
+		<p>NB: All'apertura di un file RTF, se il testo ha lo stesso colore dello sfondo della finestra, verrà cambiato in modo da essere visibile.</p>
+		<h2>Immagine di Sfondo</h2>
+		<p>Con il menù &quot;Karaoke/Sfondo&quot; è possibile aggiungere un'immagine di sfondo alla finestra karaoke. Si può farlo anche trascinando un'immagine dal Finder sulla finestra.</p>
+		<p>Si può inoltre associare un'immagine a qualsiasi file multimediale:</p>
+		<ol>
+			<li>Copiare l'immagine nella cartella del file al quale si vuole associarla.</li>
+			<li>Dargli lo stesso nome del file multimediale + l'estensione (jpeg, jpg, png, tiff o tif).</li>
+		</ol>
+		<h2>Codifica Testo</h2>
+		<p>Se un file karaoke è stato creato su altre piattaforme, i caratteri accentati non verranno visualizzati correttamente utilizzando la codifica standard Macintosh. Per risolvere questo problema, QMidi permette di scegliere la codifica di testo appropriata (&quot;Karaoke/Codifica&quot;) per qualsiasi file karaoke e di salvare questa impostazione all'interno della libreria/playlist. È possibile modificare la codifica di default nella finestra delle <a href="12_preferences.html">Preferenze</a>.</p>
+		<h2><a id="editing" name="editing"></a>Inserimento/Modifica di testo e accordi</h2>
+	<h3>Inserimento di nuovo testo</h3>
+		<ol>
+			<li>Scegliere &quot;Modifica&quot; dal menu &quot;Karaoke&quot; (con finestra karaoke in primo piano).</li>
+			<li>Digitare/Incollare il testo desiderato. Si può anche usare la finestra &quot;Cerca Testo&quot; per cercare e inserire il testo.</li>
+			<li>Registrare le modifiche dal menu &quot;Archivio/Save&quot;.</li>
+		</ol>
+		<p>Durante questa operazione, un file di testo verrà creato con lo stesso nome del file multimediale e l'estensione appropriata (txt, rtf, RTFD). Questo file verrà registrato accanto al file multimediale.</p>
+		<p><img src="../images/ExternalText.png" alt="" border="0" /></p>
+		<h3>Modifica di un testo esistente (già sincronizzato) e degli accordi</h3>
+		<p><span>Non si dovrebbe mai modificare del testo sincronizzato in modalità &quot;Modifica&quot;, perché questo invaliderebbe la sincronizzazione esistente. Il modo sicuro per modificare del testo esistente è la seguente:</span></p>
+		<ol>
+			<li><span>Scegliere &quot;Sincronizza&quot; da menu &quot;Karaoke&quot;</span> (con finestra karaoke in primo piano)<span>. </span></li>
+			<li>Cliccare il pulsante &quot;Accordi&quot; in fondo se desiderate lavorare sugli accordi.</li>
+			<li>Cliccare il pulsante &quot;matita&quot; in fondo alla finestra per abilitare la modifica manuale<span>.</span></li>
+			<li><span>Fare doppio clic sulla colonna di testo per modificarne il contenuto.</span><span> </span><span class="notabene">Gli accordi devono  formattati correttamente (vedi  &quot;<a href="13_chords.html">Accordi</a>&quot;)</span>.</li>
+		</ol>
+<p><img src="../images/manual_edit.png" alt="" border="0" /></p>
+		<p>La colonna &quot;CR&quot; serve ad aggiungere/rimuovere il carattere a capo.</p>
+		<p>Il comportamento del pulsante &quot;+&quot; dipende dalla selezione corrente:</p>
+		<ul>
+			<li>Se una riga è selezionata, verrà duplicata. Se la colonna &quot;Testo&quot; è in fase di modifica, il testo verrà suddiviso alla posizione del cursore.</li>
+			<li>Se nessuna riga è selezionata (Command-clic sulla riga selezionata per deselezionarla), una riga vuota verrà aggiunta alla fine.</li>
+		</ul>
+		<h3>Aggiunta di testo/accordi dagli appunti in  modo &quot;Sincronizza&quot;.</h3>
+        <ol>
+          <li><span>Scegliere &quot;Sincronizza&quot; da menu &quot;Karaoke&quot;</span><span>. </span></li>
+          <li>Incollare il testo. Ogni riga di testo creerà un evento sync.</li>
+    </ol>
+        <ul>
+          <li>Se una riga è selezionata, gli eventi saranno inseriti prima della selezione.</li>
+          <li>Se nessuna riga è selezionata, gli eventi verranno aggiunti alla fine.</li>
+          <li>Se si sta lavorando sugli accordi, solo gli accordi validi verranno accettati (vedi &quot;<a href="13_chords.html">Accordi</a>&quot;) .</li>
+    </ul>
+        <h3>Modifica del testo incorporato nel file multimediale</h3>
+	<p><span>QMidi non consente la modifica diretta dei testi MIDI/ID3 incorporati ( <a href="http://www.mixagesoftware.com/">MidiKit</a> può effettuare questa operazione sui file MIDI).</span></p>
+		<p><span>Perciò, se si sceglie &quot;Sincronizza&quot; dal menu &quot;Karaoke&quot;, un file di testo verrà creato automaticamente. Se l'opzione &quot;Sincronismo per riga&quot; è spuntata, QMidi manterrà solo la sincronizzazione riga per riga.</span></p>
+		<p><span>Se si sta lavorando su un file MIDI, si potrà includere poi il testo modificato scegliendo &quot;Esporta corrente&quot; con l'opzione &quot;Includi testo&quot;</span>.</p>
+		<h2>Sincronizzazione del testo e degli accordi</h2>
+		<h3>Sincronizzazione in tempo reale</h3>
+		<ol>
+			<li>Scegliere “Sincronizza” dal menu “Karaoke” (con finestra karaoke in primo piano).</li>
+			<li>Cliccare il pulsante &quot;smiley&quot; <img id="smiley" src="../images/smile.png" name="smiley" border="0" /> per abilitare il cursore di sincronizzazione.</li>
+			<li>Fare partire il brano.</li>
+			<li>Fare clic sulla riga che si desidera sincronizzare al momento desiderato (premere il tasto Invio per sincronizzare e selezionare la riga successiva).</li>
+			<li>Scegliere &quot;Visualizza&quot;dal menu &quot;Karaoke&quot; per uscire dalla modalità di sincronizzazione.</li>
+			<li>Per salvare il lavoro, scegliere &quot;Registra&quot; dal menu &quot;Archivio&quot;.</li>
+		</ol>
+		<p>Si può ovviamente effettuare il passaggio 4 a player fermo. Non è necessario sincronizzare tutto il testo in una volta: si può correggere la posizione di una riga in qualsiasi momento tornando indietro con la riproduzione e cliccando la riga al momento giusto. Tutte le azioni si possono annullare dal menu &quot;Modifica/Annulla&quot;.</p>
+		<p>Suggerimento: Fare opzione-clic su una riga per spostare la riproduzione alla posizione corrispondente.</p>
+		<h3>Sincronizzazione manuale</h3>
+		<p>Per abilitare la sincronizzazione manuale, fare clic sul pulsante &quot;Modifica&quot; (matita) e quindi doppio clic sulla colonna &quot;Posizione&quot;.</p>
+		<p><img src="../images/manual_sync.png" alt="" border="0" /></p>
+		<p>La colonna &quot;Posizione&quot; ha il seguente formato: misura:tempo:tick per i file MIDI e HH:MM:SS.centesimodisecondo per ogni altro tipo di media.</p>
+	</body>
+
+</html>

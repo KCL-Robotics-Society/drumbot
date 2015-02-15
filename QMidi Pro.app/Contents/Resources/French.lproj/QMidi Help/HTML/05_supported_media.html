@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Supported Media</title>
+	</head>
+
+	<body>
+		<h1>Formats supportés</h1>
+		<h2>Formats de fichiers supportés</h2>
+		<ul>
+			<li>Fichiers MIDI au format 0 et 1 (.mid .kar).</li>
+			<li>Fichiers audio supportés par Mac OS X Core Audio, y compris AIFF, Wave, AAC, Apple Lossless, MP3.</li>
+			<li>Fichiers FLAC (jusqu'à 24bit/96Khz).</li>
+			<li>Formats Vidéo/Audio supportés par QuickTime. Vous pouvez augmenter le nombre de formats de fichiers supportés en installant des &quot;Composants QuickTime&quot; de tierce partie comme:<ul>
+					<li type="disc"><a href="http://perian.org/">Perian</a> (FLV et beaucoup d'autres)</li>
+					<li type="disc"><a href="http://www.telestream.net/">Flip4Mac</a> (WMV, AVI)</li>
+				</ul>
+			</li>
+		</ul>
+		<h3><a id="midi_sync" name="midi_sync"></a>Comment jouer un fichier MIDI synchronisé à un fichier Audio/Vidéo (<span class="qmidipro">QMidi Pro seulement</span>)</h3>
+		<ol>
+			<li>Copier le fichier MIDI dans le répertoire du fichier Audio/Vidéo..</li>
+			<li>Donner au fichier MIDI le même nom que le fichier Audio/Vidéo, en ajoutant l'extension &quot;.mid&quot; ou &quot;.kar&quot;.</li>
+			<li>Ouvrir le fichier Audio/Vidéo. Le MIDI sera joué en parfaite synchronisation</li>
+		</ol>
+		<h2>Formats karaoké supportés</h2>
+		<h3>Texte</h3>
+		<p>Le format de karaoké le plus répandu. Les paroles karaoké sont stockées à l'intérieur du fichier media. QMidi supporte beaucoup de formats MIDI karaoké et lit également les paroles MP3 ID3 (SYLT, Lyrics3).</p>
+		<h3>Vidéo</h3>
+		<p>Beaucoup de karaoké existent sous forme de fichier vidéo. QMidi peut lire n'importe quel fichier lisible par QuickTime.</p>
+		<h3>CDG</h3>
+		<p>QMidi peut lire des fichiers CDG &quot;rippés&quot;: Si un fichier CDG est apparié avec un fichier audio (&quot;songname.mp3&quot; &lt;=&gt; &quot;songname.cdg&quot;), les graphiques CDG sont affichés dans la fenêtre karaoké/miroir.</p>
+		<p>NB: QMidi ne peut pas lire directement des CD+G. Vous devrez d'abord extraire les files Audio+CDG avec un logiciel dédié.</p>
+	</body>
+
+</html>

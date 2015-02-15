@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Gestione dei documenti</title>
+	</head>
+
+	<body>
+		<h1>Gestione dei documenti Media</h1>
+		<p>Se si prevede di utilizzare la libreria di QMidi oppure i documenti playlist per organizzare i propri file multimediali, si dovrebbero seguire alcune regole per evitare possibile errori del tipo &quot;file non trovato&quot;, dopo il trasferimento dei dati su un altro computer o disco. Poiché libreria e playlist contengono riferimenti (&quot;alias&quot;) ai file, è molto importante mantenere la posizione relativa tra i file e la libreria/playlist quando si spostano/copiano.</p>
+		<h2>Posizione dei file</h2>
+		<h3>Documenti Playlist</h3>
+		<p>Il procedimento consigliato per creare una playlist è:</p>
+		<ul>
+			<li>Scegliere una cartella &quot;radice&quot; comune che conterrà sia la playlist che i file multimediali.</li>
+			<li>Spostare tutti i file multimediali all'interno di questa cartella. Si può ovviamente utilizzare qualsiasi gerarchia di &quot;sottocartelle&quot;.</li>
+			<li>Caricare i file nella playlist e quindi salvarla al livello superiore della cartella radice.</li>
+		</ul>
+		<h3>Libreria</h3>
+		<p>Il database della libreria &quot;QMidi_Library.sql&quot; viene registrato nella cartella &quot;(Home)/Musica/QMidi&quot; e non dev'essere spostato affinché QMidi possa trovarlo. Questa posizione è quindi adatta ad essere utilizzata come cartella radice, che potrà essere spostata da un account (computer) ad un altro.</p>
+		<p><img src="../images/library_location.png" alt="" border="0" /></p>
+		<p>La libreria può naturalmente contenere riferimenti a file che si trovano in altre cartelle, come quella di iTunes o la cartella Filmati: non è necessario spostarli all'interno della cartella di QMidi. E' importante tenere a mente che si dovra trasferire tutti i dati senza cambiare la posizione relativa tra i vari elementi. Se tutti i file multimediali si trovano nella cartella home, si potrà utilizzare l'applicazione &quot;<a href="http://support.apple.com/kb/HT4413?viewlocale=it_IT">Assistente Migrazione</a>&quot; per trasferire i dati da un computer all'altro.</p>
+		<h2>Libreria iTunes</h2>
+		<p>Come spiegato nella sezione &quot;Posizione dei file&quot;, si possono aggiungere alla libreria/playlist dei riferimenti a documenti che sono situati nella libreria di iTunes. Tuttavia, la seguente funzione di iTunes può causare dei problemi:</p>
+		<p><img src="../images/iTunes_organized%20.png" alt="" border="0" /></p>
+		<p>Quando, all'interno di iTunes, si modificano i tag Artista, Album o numero traccia/disco di un file, questi verrà spostato/rinominato, ignorando i file collegati (testo, immagine o midi). QMidi fa del suo meglio per informare l'utente quando questo avviene, ma la cosa migliore da fare è disabilitare questa funzione.</p>
+		<p>NB: Si possono importare playlist/selezioni da iTunes semplicemente trascinandole sulla barra laterale della libreria.</p>
+		<h2><a id="copying" name="copying"></a>Copia/Spostamento file</h2>
+		<h3>Documenti Playlist</h3>
+		<p>Se si è seguita la logica illustrata nelle sezione &quot;Posizione dei file&quot;, la gerarchia dei file dovrebbe essere simile a questa:</p>
+		<p><img src="../images/MediaLocation.png" alt="" border="0" /></p>
+		<p></p>
+		<p>Prima di spostare/copiare la cartella radice &quot;QMidi&quot; si devono aggiornare le playlist che contiene: per farlo bisogna tenere premuto il tasto opzione durante l'apertura della playlist. Questa operazione è simile alla funzione &quot;Consolida documenti&quot; di iTunes.</p>
+		<p>Dopo di che si potrà spostare l'intera cartella &quot;QMidi&quot; su un altro computer/disco con i riferimenti relativi della playlist aggiornati. Si dovrebbe infine ripetere questa operazione di &quot;consolidamento&quot; sulla playlist copiata.</p>
+		<p><span class="notabene">NB: Poiché QMidi registra le informazioni di sincronizzazione nella &quot;<a href="http://it.wikipedia.org/wiki/Resource_fork">resource fork</a>&quot; dei file di testo, questi possono essere salvati solo su dischi in formato <a href="http://it.wikipedia.org/wiki/Hierarchical_File_System">HFS</a> (Mac).</span></p>
+		<h3>Libreria</h3>
+		<p>La stessa logica viene usata qui: prima e dopo un'operazione di trasferimento si devono aggiornare i riferimenti della libreria. Questo viene fatto tenendo premuto il tasto opzione all'avvio di QMidi.</p>
+		<h2>Libreria Condivisa</h2>
+		<p>Poiché la posizione del database della libreria è obbligata, non è normalmente possibile condividere una libreria tra i vari utenti del computer.</p>
+		<p>Si può comunque farlo in questo modo (per utenti avanzati):</p>
+		<ol>
+			<li>Spostare la cartella &quot;(Home)/Musica/QMidi&quot; in &quot;/Utenti/Condivisa/&quot; (o qualsiasi altra cartella accessibile da tutti gli utenti).</li>
+			<li>Assegnare i privilegi &quot;Everyone Lettura/Scrittura&quot; a tutto il contenuto della cartella spostata.</li>
+			<li>Creare un <a href="http://en.wikipedia.org/wiki/Symbolic_link">link simbolico</a> (non un alias) della cartella spostata nella cartella &quot;(Home)/Musica/&quot; di tutti gli utenti che dovranno accedere alla libreria. Il link dovrà chiamarsi &quot;QMidi&quot; come la cartella originale.</li>
+		</ol>
+		<p>Come detto prima, se la libreria si riferisce a file multimediali al di fuori della cartella condivisa &quot;QMidi&quot;, sarà necessario mantenere le posizioni relative durante il trasferimento verso un altro computer. Buona fortuna!</p>
+	</body>
+
+</html>

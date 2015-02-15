@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+	
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Preferences</title>
+	</head><body>
+		<h1>Preferences</h1>
+		<h2>Général</h2>
+		<h3>Ouvrir fichiers au démarrage</h3>
+		<p>Si cette option est activée, QMidi affichera la boîte de dialogue &quot;Ouvrir&quot; au démarrage de l'application.</p>
+		<h3><a id="auto_play" name="auto_play"></a>Lecture automatique</h3>
+<p>Si cette option est activée (par défaut), QMidi jouera immédiatement un
+morceau lorsque celui-ci est chargé. Il peut être utile de désactiver
+cette fonction pour effectuer un "preroll", afin de permettre un démarrage plus rapide au moment voulu.</p>
+<h3>Ouverture automatique fenêtre vidéo</h3>
+<p>Si cette option est activée (par défaut), QMidi affichera automatiquement la fenêtre karaoké à la lecture de vidéo/CDG.</p>
+<h3>Activer l'historique de lecture</h3>
+<p>Cette option permet l'enregistrement d'un historique de lecture dans le fichier log de QMidi. Chaque morceau lu génère un rapport au format &lt;date&gt; &lt;heure&gt; &lt;titre&gt;. Cela peut être utile pour savoir quel morceau a été joué durant un spectacle. Le fichier log est situé dans le dossier (Départ)/Bibliothèque/Logs et peut être consulté (normalement avec l'application Console) en choisissant &quot;Historique&quot; dans le menu &quot;Fenêtres&quot;.</p>
+		<h2>Lecteur</h2>
+		<h3>Messages d'initialisation</h3>
+		<p>Déterminent comment l'appareil MIDI est remis à zéro entre les morceaux, afin d'éviter que les réglages d'un fichier précédent affecte la lecture du fichier actuel. Choisissez une ou plusieurs des options suivantes:</p>
+<ul>
+			<li>GM - Sélectionnez cette option si vous utilisez un synthétiseur externe ou virtuel qui est compatible GM, mais pas GS ni XG.</li>
+			<li>GS - Sélectionnez cette option avec des synthétiseurs compatibles Roland GS et pour des appareils XG en mode GS.</li>
+			<li>XG - Sélectionnez cette option avec des appareils Yamaha XG en mode XG.</li>
+</ul>
+<p>Vous pouvez également envoyer ces messages manuellement en choisissant &quot;Réinitialiser système&quot; dans le menu &quot;Lecteur&quot;.</p>
+		<h3>Envoyer &quot;All Sounds Off&quot; à l'arrêt</h3>
+		<p>Si cette option est activée (par défaut), QMidi enverra le message de contrôle &quot;All Sounds Off&quot; lorsque vous appuyez sur le bouton stop. Si le périphérique MIDI connecté supporte ce type de commande, il fera immédiatement arrêter tous les sons (sustain des cymbales, réverb, etc.) A ne pas confondre avec le message &quot;All Notes Off&quot; qui est toujours envoyé!</p>
+		<h3>Lecture depuis la première note</h3>
+		<p>Si cette
+option est activée, QMidi sautera tous les silences situés au début
+d'un fichier MIDI et commencera immédiatement à la première note.</p>
+<h3>Pause avant de démarrer</h3>
+<p>Les synthétiseurs ont besoin d'un peu de temps pour traiter les messages d'initialisation. Il peut donc être nécessaire d'attendre un minimum avant de commencer la lecture. Utilisez la valeur la plus courte possible!</p>
+		<h3>Activer le repérage d'évenements (Chase events)</h3>
+		<p>Lorsque cette fonction est activée, QMidi transmet les messages MIDI nécéssaires chaque fois que vous vous déplacez à une autre position dans votre morceau, afin que tous les appareils MIDI soient correctement réglés au niveau des Program Change, messages de Controller (comme le volume MIDI), etc.</p>
+		<h3>Filtrer les messages redondants</h3>
+<p>Cette option est activée par défaut et ne devrait pas être désactivée.</p>
+<h2>Karaoké</h2>
+<h3>Notation des accords</h3>
+<p>Cette option vous permet de choisir la notation des accords.</p>
+<h3>Encodage par défaut</h3>
+<p>Cet encodage sera utilisé par défaut lorsque des fichiers seront ajoutés à une liste de lecture ou bien chargés depuis le Finder. L'encodage utilisé peut être modifié en choisissant &quot;Encodage&quot; dans le menu &quot;Karaoké&quot;. Vous pouvez personnaliser la liste des encodages.</p>
+<h3>Sur texte enrichi, utiliser</h3>
+<p>Si vous désirez utiliser l'icône smiley sur du texte formaté (RTF) au lieu du texte coloré.</p>
+<h3>Montrer séparateur texte/accords</h3>
+<p>Basculer l'affichage du séparateur texte/accords.</p>
+	</body></html>

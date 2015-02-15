@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+	
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" /><title>Media Management</title></head><body>
+		<h1>Organisation des media</h1>
+		<p>Si
+vous projetez d'utiliser la bibliothèque ou la liste de lecture de
+QMidi pour organiser vos fichiers media, suivez ces quelques règles
+pour éviter l'erreur "fichier manquant" lorsque vous transférez vos
+fichiers sur un autre ordinateur ou un autre disque. Il est très
+important de conserver la position relative entre fichiers media et
+bibliothèque/liste de lecture pendant le déplacement ou la copie, car
+la bibliothèque et la liste de lecture contiennent des "alias" vers ces
+fichiers.</p>
+		<h2>Placement des media</h2>
+		<h3>Documents liste de lecture</h3>
+		<p>Voici la procédure recommandée pour créer une liste de lecture:</p>
+		<ul>
+			<li>Choisir un dossier racine qui contiendra les listes de lecture et les fichiers media.</li>
+			<li>Déplacer tous les fichiers media dans ce dossier. Vous pouvez y utiliser des sous-dossiers.</li>
+			<li>Ouvrir les fichiers media dans la liste de lecture et sauvegarder celle-ci au premier niveau dans le dossier racine.</li>
+		</ul>
+		<h3>Bibliothèque</h3>
+		<p>La
+base de données de la bibliothèque est sauvegardée dans le répertoire
+"(Départ)/Musique/QMidi" et doit y rester pour que QMidi puisse y
+accéder. En conséquence, ce répertoire peut être utilisé comme un
+dossier racine qui vous permettra de déplacer sans difficulté vos
+fichiers d'un ordinateur à un autre ou d'un compte utilisateur à un
+autre.</p>
+		<p><img src="../images/library_location.png" alt="" border="0" /></p>
+		<p>La
+bibliothèque peut également pointer vers des fichiers situés à d'autres
+endroits (comme par exemple le dossier iTunes ou le dossier Vidéos). Il
+n'est pas nécessaire de les déplacer dans le dossier de QMidi. Cela dit, il est
+important de garder en tête que vous devrez transférer tous vos
+fichiers sans modifier la position relative des différents éléments. Si
+tous vos fichiers media sont situés dans votre dossier de départ, vous
+pourrez sans difficulté utiliser l'<a href="http://support.apple.com/kb/HT4413?viewlocale=en_US">Assistant migration</a> d'Apple pour transférer vos données d'un ordinateur à un autre.</p>
+		<h2>Bibliothèque iTunes</h2>
+		<p>Comme cela a été expliqué dans le chapitre "Placement des
+media", vous pouvez sans autre ajouter vos media iTunes à votre
+bibliothèque/liste de lecture. Cela dit, la fonction "Laisser iTunes
+organiser le dossier iTunes Media" peut causer quelques problèmes:</p>
+		<p><img src="../images/iTunes_organized%20.png" alt="" border="0" /></p>
+		<p>Lorsque vous modifiez soit l'artiste, l'album ou les tags de la piste ou du disque, iTunes va déplacer/renommer seulement le fichier media et laisser les fichiers QMidi synchronisés à leur place d'origine et avec leur nom d'origine. QMidi fait de son mieux pour informer l'utilisateur de ce genre de situation, mais il est préférable de désactiver cette fonction d'iTunes.</p>
+		<p>Vous pouvez importer des listes de lecture
+ou des sélections d'iTunes en les faisant glisser depuis la barre
+latérale de la fenêtre bibliothèque.</p>
+		<h2><a id="copying" name="copying"></a>Déplacement et copie de media</h2>
+		<h3>Documents liste de lecture</h3>
+		<p>Si vous avez suivi les indications du chapitre &quot;Placement des media&quot;, votre arborescence de fichiers devrait ressembler à ceci:</p>
+		<p><img src="../images/MediaLocation.png" alt="" border="0" /></p>
+		<p>
+</p>
+		<p>Avant
+de déplacer ou de copier le dossier racine de QMIDI, vous devriez
+rafraîchir toutes les listes de lecture qu'il contient. Cela peut se
+faire en maintenant la touche option appuyée tout en ouvrant la ou les
+liste(s) de lecture. Cette manipulation est semblable à la fonction
+"Consolider la bibliothèque" d'iTunes.</p>
+		<p>Après cela vous pourrez
+copier sans difficulté tout le dossier "QMIDI" sur un autre ordinateur
+ou un autre disque, sans perdre les références relatives des listes de
+lecture. Une fois l'opération effectuée, vous devrez rafraîchir les
+listes de lecture copiées.</p>
+		<p><span class="notabene">NB: QMidi sauvegarde les informations de synchronisation dans le fichier texte <a href="http://en.wikipedia.org/wiki/Resource_fork">resource fork</a>. Vous ne pouvez donc les conserver seulement sur des volumes formatés au format <a href="http://en.wikipedia.org/wiki/Hierarchical_File_System">HFS</a> (Mac).</span></p>
+		<h3>Bibliothèque</h3>
+		<p>La même logique est utilisée ici: avant et après une opération de transfert, vous devrez rafraîchir les références de la bibliothèque, en gardant la touche option appuyée tout en démarrant QMidi.</p>
+		<h2>Partager la bibliothèque</h2>
+		<p>Le placement de la bibliothèque de QMidi est codée en dur. Il n'est
+donc pas facile de partager une bibliothèque entre les différents
+comptes utilisateur de votre ordinateur.</p>
+		<p>Cela dit, il existe une astuce (pour utilisateurs avancés):</p>
+		<ul>
+			<li>Déplacer
+le dossier "(Départ)/Musique/QMidi" vers "/Utilisateurs/Partagé/" (ou
+n'importe quel autre endroit accessible par tous les utilisateurs).</li>
+			<li>Assigner les autorisations "Everyone Read/Write" à tout le contenu du dossier déplacé.</li>
+			<li>Placer un lien symbolique (PAS un alias) du dossier déplacé dans le dossier &quot;(Départ)/Musique/&quot; pour tous les utilisateurs qui ont accès à la bibliothèque partagée. (Le lien doit être nommé &quot;QMidi&quot;.)</li>
+		</ul>
+		<p>Comme il a déjà été dit, si votre bibliothèque pointe vers des fichiers media hors du dossier bibliothèque de QMIDI, vous devez conserver les positions relatives durant le transfert sur un autre ordinateur. Bon courage!</p>
+	</body></html>

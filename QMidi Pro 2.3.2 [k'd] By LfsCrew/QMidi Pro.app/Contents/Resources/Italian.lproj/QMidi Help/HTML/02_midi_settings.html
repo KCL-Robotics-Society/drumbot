@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Impostazioni MIDI</title>
+	</head>
+
+	<body>
+		<h1>Impostazioni MIDI</h1>
+		<h2>Uscita MIDI</h2>
+		<p>La prima volta che si avvia QMidi, l'uscita MIDI verrà indirizzata al sintetizzatore Apple DLS. Questa impostazione può essere modificata successivamente scegliendo &quot;Impostazioni Midi…&quot; dal menu &quot;QMidi&quot;.</p>
+		<h3><a id="DLS" name="DLS"></a>Sintetizzatore Apple DLS</h3>
+		<p>Mac OS X include un sintetizzatore software (Apple DLS Music Device) compatibile con i formati standard DownLoadable Sounds (DLS) e SoundFont. Il sintetizzatore Mac fornisce prestazioni di alta qualità e bassa latenza nella riproduzione.</p>
+		<p>Per impostazione predefinita, viene utilizzato il SoundFont &quot;QuickTime Music Synthesizer&quot;, ma si possono facilmente installare e utilizzare altri SoundFont:</p>
+		<p>In primo luogo, scaricare un SoundFont (un file. SF2 file). Il SoundFont deve essere almeno di tipo GM (General MIDI con 128 strumenti) o meglio GS (GM più alcune estensioni di Roland). Si possono trovare dei SoundFont da 4Mb a 128 + MB di dimensione, a seconda della qualità e della ricchezza del set di strumenti.</p>
+		<p>Una volta trovato un file. SF2 file, copiarlo in ~/Libreria /Audio/Sounds/Banks e riavviare QMidi, quindi scegliere &quot;Sintetizzatore&quot; dal menu &quot;Finestre&quot;, selezionare il SoundFont dal menu &quot;Sound Bank&quot; e fare clic sul pulsante &quot;Registra Preset&quot;.</p>
+		<h3>Porta MIDI</h3>
+		<p>Mac OS X integra i servizi MIDI direttamente nel sistema operativo per migliori stabilità e prestazioni. Cliccando sul pulsante &quot;Configurazione MIDI Audio&quot; si può definire una configurazione MIDI a livello di sistema utilizzabile da tutte le applicazioni. Mac OS X include anche un driver MIDI di rete, che consente di inviare e ricevere messaggi MIDI tramite il network.</p>
+		<h2>Ingresso MIDI</h2>
+		<h3>Porta MIDI</h3>
+		<p>In questa sezione è possibile scegliere la sorgente di ingresso MIDI e specificare come QMidi debba interpretare i messaggi in arrivo.</p>
+		<h3>MIDI Time Code (<span class="qmidipro">Solo QMidi Pro</span>)</h3>
+		<p>Questo checkbox consente di abilitare la ricezione dei messaggi MTC (<a href="http://it.wikipedia.org/wiki/MIDI_timecode">MIDI Time Code</a>). Per sincronizzare QMidi con una sorgente esterna MTC, attenersi alla seguente procedura:</p>
+		<ol>
+			<li>Abilitare &quot;MIDI Time Code&quot; nelle impostazioni MIDI.</li>
+			<li>Scegliere &quot;Aggancia a MTC&quot; dal menu &quot;Player&quot;.</li>
+		</ol>
+		<h3>Trasporto MIDI</h3>
+		<p>È possibile controllare il player tramite messaggi MIDI. Questa sezione permette di abilitare e configurare questa funzione. Si possono immettere i messaggi MIDI per Start/Stop manualmente, oppure premere il tasto &quot;Impara&quot;per utilizzare l'ultimo messaggio MIDI ricevuto.</p>
+		<p>Suggerimento: QMidi può essere pilotato anche tramite script (vedi sezione <a href="10_applescript.html">AppleScript</a>).</p>
+		<h2>Cos’è il MIDI?</h2>
+		<p>Il MIDI è un tipo di informazione di controllo utilizzato con i sintetizzatori. Spieghiamolo con una analogia. Il computer può trasmettere dei messaggi a una stampante, su come vuole che venga stampata una pagina. La stampante quindi si occupa di convertire queste informazioni per stampare sulla carta. Con il MIDI il sintetizzatore opera in modo simile a una “stampante musicale”: il computer gli trasmette le informazioni, specificando quali note vanno suonate, e si occupa di creare il suono. Uno dei vantaggi di questa tecnica è che una registrazione effettuata con, ad esempio, un suono di piano, può essere rieseguita con un suono di organo, di fiati o di chitarra, semplicemente modificando le impostazioni del sintetizzatore.</p>
+		<h2>Cos’è GM/GS/XG?</h2>
+		<h3>General MIDI (GM)</h3>
+		<p>Il General MIDI è un insieme universale di specifiche per i dispositivi di generazione del suono. Questi specifiche mirano a consentire la creazione di file musicali che non si limita agli apparecchi da una particolare fabbricante o di modelli specifici. Il sistema General MIDI definisce alcune regole, come il numero minimo di voci che dovrebbero essere disponibili, i messaggi MIDI che dovrebbero essere riconosciuti, quali suoni corrispondono a quali numeri di Program Change, e la mappatura degli strumenti percussivi sulla tastiera. Grazie a queste specifiche, se si crea della musica con uno strumento compatibile General MIDI potrà essere rieseguita su qualsiasi altro strumento GM e la musica suonerà all’incirca allo stesso modo.</p>
+		<h3>Roland GS</h3>
+		<p>Questa è una variante del General MIDI introdotta da Roland. Essa definisce ulteriori procedure standard per la selezione dei drum kit e suoni supplementari, e per impostare una serie di altri parametri in strumenti Roland GS compatibile.</p>
+		<h3>Yamaha XG</h3>
+		<p>Questa è una variante del General MIDI introdotta da Yamaha. Esso definisce ulteriori procedure standard per la selezione di drum kit alternativi e per impostare una serie di altri parametri in strumenti Yamaha XG compatibile.</p>
+	</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>QMidi Windows</title>
+	</head>
+
+	<body>
+		<h1>Fenêtres de QMidi</h1>
+		<h2>Transport (Lecteur)</h2>
+		<p>Cette fenêtre flottante vous
+permet d'accéder aux fonctions principales du lecteur. Cela dit, vous
+pouvez lire vos fichiers sans utiliser la fenêtre de transport puisque
+toutes les commandes de base pour la lecture, ainsi que leurs
+raccourcis claviers respectifs, sont accessibles depuis le menu
+"Lecteur".</p>
+		<h2>Karaoké/Miroir</h2>
+		<p>Le Karaoké (texte ou CDG) est affiché dans ces fenêtres. Chaque fenêtre possède ses propres options de formatage (voir &quot;<a href="09_karaoke.html">Formatage Karaoké</a>"). La fenêtre miroir est normalement utilisée sur un second écran, en mode plein écran.</p>
+		<p>Les vidéos sont affichés dans la fenêtre miroir si celle-ci est ouverte. Autrement, ils sont affichés dans la fenêtre Karaoké.</p>
+		<h2>Bibliothèque</h2>
+		<p>La
+bibliothèque vous permet de garder la trace de tous vos fichiers media
+avec une seule fenêtre, comme dans iTunes. Vous pouvez facilement créer des
+listes de lecture et des filtres (listes de lecture intelligentes) par
+glisser-déposer. Vous pouvez ensuite ajouter des éléments avec le
+bouton ajouter (+) situé au bas de la liste. Vous pouvez également
+glisser-déposer les fichiers depuis le Finder sur la liste.</p>
+		<p><span class="notabene">NB: Référez-vous à la rubrique "<a href="07_media_management.html">Organisation des media</a>" de l'aide pour apprendre la meilleure manière de conserver/déplacer vos fichiers media en toute sécurité.</span></p>
+		<p>Par
+défaut, le double-clic sur un élément (ou l'appui sur la touche retour
+à la ligne quand il est sélectionné) chargera et lira celui-ci
+immédiatement. Vous pouvez désactiver l'option "<a href="12_preferences.html#auto_play">Lecture automatique</a>" dans les préférences de QMidi.</p>
+		<ul>
+			<li>Si
+les éléments sont classés par index, vous pouvez en modifier l'ordre
+par glisser-déposer. Vous pouvez également aller à un index de
+votre choix en tapant son numéro au clavier.</li>
+			<li>Si les éléments sont classés par nom et vous tapez les premières lettre d'un élément au clavier, le premier élément correspondant sera sélectionné.</li>
+		</ul>
+		<p>Le champ de recherche dans la barre d'outil vous permet d'effectuer rapidement des recherches.</p>
+		<h3>Importer depuis iTunes</h3>
+		<p>Vous pouvez importer des listes de lecture d'iTunes ou des sélections en les glissant sur la barre latérale de la fenêtre bibliothèque.</p>
+		<h2>Documents listes de lecture</h2>
+		<p>QMidi lit encore les documents liste de lecture utilisés dans les anciennes versions.</p>
+		<p>Lorsque vous ouvrez plus d'un fichier à la fois (mode scan), une liste de lecture est créée et remplie automatiquement. Une autre manière de créer une liste de lecture est de choisir &quot;Nouvelle liste de lecture&quot; dans le menu &quot;Fichier&quot;.</p>
+		<p>Vous pouvez importer facilement un document de ce type dans la bibliothèque en le glissant sur la barre latérale de la fenêtre bibliothèque.</p>
+		<h2>Table de mixage MIDI</h2>
+		<p>La table de mixage vous permet de voir/modifier en temps réel la plupart des paramètres sonores. Vous pouvez changer le numéro du patch GM (son), le volume, la balance (panoramique), le niveau de réverbération et de chorus sur chacun des 16 canaux MIDI. Si le bouton READ est mis en évidence (par défaut), tous les paramètres sont lus depuis le fichier MIDI et envoyés à l'appareil de sortie. Les valeurs de chaque élément de la table de mixage sont également mis à jour en temps réel.</p>
+		<p>Les patch non-GM sont affichés en format [P x
+Banque y] où x est le numéro du patch et y le numéro de variation CC0
+(Control change 0), ou Sélection de Banque MSB. La banque 127 est la
+série d'instruments MT-32 du SoundCanvas de Roland (pas supporté par
+les instrument QuickTime).</p>
+		<p>Pour faire vos propres mixages, suivez les étapes suivantes:</p>
+		<ol>
+			<li>Jouer le début du fichier MIDI avec le bouton READ (lire) enclenché afin de permettre l'initialisation de l'appareil et de la table de mixage.</li>
+			<li>Désactiver le bouton READ.</li>
+			<li>Faire les modifications.</li>
+			<li>Sauvegarder le fichier mixé en choisissant &quot;Fichier/Exporter le fichier courant…&quot; et cocher la case &quot;Sauvegarder mixage&quot;.</li>
+		</ol>
+		<p><span class="notabene">NB: Toute automation du mixage existante sera supprimée à la sauvegarde d'un mixage!</span></p>
+		<h3>Effets GS</h3>
+		<p>Les effets GS sont une extension de la table de mixage et
+vous permet de voir/modifier les paramètres des effets master GS. Ces
+réglages n'auront un effet qu'avec des appareils MIDI compatibles GS,
+mais les modifications seront sauvegardées dans le mixage.</p>
+		<h2>Recherche de paroles</h2>
+		<p>Cette fenêtre vous permet de trouver des paroles avec le serveur "LyrDB".</p>
+	</body>
+
+</html>

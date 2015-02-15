@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Controllers</key>
+	<array>
+		<string>Bank Select MSB (GS)</string>
+		<string>Modulation Wheel</string>
+		<string>Breath</string>
+		<string>3</string>
+		<string>Foot</string>
+		<string>Portamento Time</string>
+		<string>Data Entry MSB</string>
+		<string>Volume</string>
+		<string>Balance</string>
+		<string>9</string>
+		<string>Pan</string>
+		<string>Expression</string>
+		<string>Effect control 1</string>
+		<string>Effect control 2</string>
+		<string>14</string>
+		<string>15</string>
+		<string>General Purpose #1</string>
+		<string>General Purpose #2</string>
+		<string>General Purpose #3</string>
+		<string>General Purpose #4</string>
+		<string>20</string>
+		<string>21</string>
+		<string>22</string>
+		<string>23</string>
+		<string>24</string>
+		<string>25</string>
+		<string>26</string>
+		<string>27</string>
+		<string>28</string>
+		<string>29</string>
+		<string>30</string>
+		<string>31</string>
+		<string>Bank Select LSB (GS)</string>
+		<string>Modulation Wheel LSB</string>
+		<string>Breath LSB</string>
+		<string>35</string>
+		<string>Foot LSB</string>
+		<string>Portamento Time LSB</string>
+		<string>Data Entry LSB</string>
+		<string>Volume LSB</string>
+		<string>Balance LSB</string>
+		<string>41</string>
+		<string>Pan LSB</string>
+		<string>Expression LSB</string>
+		<string>Effect control 1 LSB</string>
+		<string>Effect control 2 LSB</string>
+		<string>46</string>
+		<string>47</string>
+		<string>General Purpose #1 LSB</string>
+		<string>General Purpose #2 LSB</string>
+		<string>General Purpose #3 LSB</string>
+		<string>General Purpose #4 LSB</string>
+		<string>52</string>
+		<string>53</string>
+		<string>54</string>
+		<string>55</string>
+		<string>56</string>
+		<string>57</string>
+		<string>58</string>
+		<string>59</string>
+		<string>60</string>
+		<string>61</string>
+		<string>62</string>
+		<string>63</string>
+		<string>Hold Pedal #1</string>
+		<string>Portamento (GS)</string>
+		<string>Sostenuto (GS)</string>
+		<string>Soft Pedal (GS)</string>
+		<string>Legato Pedal</string>
+		<string>Hold Pedal #2</string>
+		<string>Sound Variation</string>
+		<string>Sound Timbre</string>
+		<string>Sound Release Time</string>
+		<string>Sound Attack Time</string>
+		<string>Sound Brightness</string>
+		<string>Sound Control #6</string>
+		<string>Sound Control #7</string>
+		<string>Sound Control #8</string>
+		<string>Sound Control #9</string>
+		<string>Sound Control #10</string>
+		<string>GP Control #5</string>
+		<string>GP Control #6</string>
+		<string>GP Control #7</string>
+		<string>GP Control #8</string>
+		<string>Portamento Control (GS)</string>
+		<string>85</string>
+		<string>86</string>
+		<string>87</string>
+		<string>88</string>
+		<string>89</string>
+		<string>90</string>
+		<string>Reverb Level (GS)</string>
+		<string>Tremolo Depth</string>
+		<string>Chorus Level (GS)</string>
+		<string>Celeste Depth</string>
+		<string>Phaser Depth</string>
+		<string>Data Increment</string>
+		<string>Data Decrement</string>
+		<string>NRPN Parameter LSB (GS)</string>
+		<string>NRPN Parameter MSB (GS)</string>
+		<string>RPN Parameter LSB</string>
+		<string>RPN Parameter MSB</string>
+		<string>102</string>
+		<string>103</string>
+		<string>104</string>
+		<string>105</string>
+		<string>106</string>
+		<string>107</string>
+		<string>108</string>
+		<string>109</string>
+		<string>110</string>
+		<string>111</string>
+		<string>112</string>
+		<string>113</string>
+		<string>114</string>
+		<string>115</string>
+		<string>116</string>
+		<string>117</string>
+		<string>118</string>
+		<string>119</string>
+		<string>All Sound Off (GS)</string>
+		<string>Reset All Controllers</string>
+		<string>Local On/Off</string>
+		<string>All Notes Off</string>
+		<string>Omni Mode Off</string>
+		<string>Omni Mode On</string>
+		<string>Mono Mode On</string>
+		<string>Poly Mode On</string>
+	</array>
+	<key>Event Keys</key>
+	<array>
+		<string>144</string>
+		<string>160</string>
+		<string>176</string>
+		<string>192</string>
+		<string>208</string>
+		<string>224</string>
+		<string>240</string>
+		<string>255</string>
+	</array>
+	<key>Event Names</key>
+	<array>
+		<string>Note</string>
+		<string>Note Aftertouch</string>
+		<string>Controller</string>
+		<string>Program Change</string>
+		<string>Channel Aftertouch</string>
+		<string>Pitch Bend</string>
+		<string>System Exclusive</string>
+		<string>Meta Event</string>
+	</array>
+	<key>GM Drum Names</key>
+	<array>
+		<string>STANDARD</string>
+		<string>ROOM</string>
+		<string>POWER</string>
+		<string>ELECTRONIC</string>
+		<string>ANALOG</string>
+		<string>JAZZ</string>
+		<string>BRUSH</string>
+		<string>ORCHESTRA</string>
+		<string>SFX</string>
+		<string>CM-64</string>
+	</array>
+	<key>GM Groups</key>
+	<array>
+		<string>Piano</string>
+		<string>Percussion</string>
+		<string>Organ</string>
+		<string>Guitar</string>
+		<string>Bass</string>
+		<string>Strings</string>
+		<string>Ensemble</string>
+		<string>Brass</string>
+		<string>Reed</string>
+		<string>Pipe</string>
+		<string>Synth Lead</string>
+		<string>Synth Pad</string>
+		<string>Synth Effects</string>
+		<string>Ethnic</string>
+		<string>Percussive</string>
+		<string>Effects</string>
+	</array>
+	<key>GM Names</key>
+	<array>
+		<string>Acoustic Grand</string>
+		<string>Bright Acoustic</string>
+		<string>Electric Grand</string>
+		<string>Honky-tonk</string>
+		<string>E-Piano 1</string>
+		<string>E-Piano 2</string>
+		<string>Harpsichord</string>
+		<string>Clavinet</string>
+		<string>Celesta</string>
+		<string>Glockenspiel</string>
+		<string>Music Box</string>
+		<string>Vibraphone</string>
+		<string>Marimba</string>
+		<string>Xylophone</string>
+		<string>Tubular Bell</string>
+		<string>Dulcimer</string>
+		<string>Drawbar Organ</string>
+		<string>Perc. Organ</string>
+		<string>Rock Organ</string>
+		<string>Church Organ</string>
+		<string>Reed Organ</string>
+		<string>Accordion</string>
+		<string>Harmonica</string>
+		<string>Tango Accordion</string>
+		<string>Nylonstr. Guitar</string>
+		<string>Steelstr. Guitar</string>
+		<string>Jazz Guitar</string>
+		<string>Clean Guitar</string>
+		<string>Muted Guitar</string>
+		<string>Overdrive Guitar</string>
+		<string>Distortion Guitar</string>
+		<string>Gt.Harmonics</string>
+		<string>Acoustic Bass</string>
+		<string>Fingered Bass</string>
+		<string>Picked Bass</string>
+		<string>Fretless Bass</string>
+		<string>Slap Bass 1</string>
+		<string>Slap Bass 2</string>
+		<string>Synth Bass 1</string>
+		<string>Synth Bass 2</string>
+		<string>Violin</string>
+		<string>Viola</string>
+		<string>Cello</string>
+		<string>Contrabass</string>
+		<string>Tremolo Strings</string>
+		<string>Pizzicato Strings</string>
+		<string>Harp</string>
+		<string>Timpani</string>
+		<string>String Ensemble 1</string>
+		<string>String Ensemble 2</string>
+		<string>Syn.Strings1</string>
+		<string>Syn.Strings2</string>
+		<string>Choir Aahs</string>
+		<string>Voice Oohs</string>
+		<string>Synth Voice</string>
+		<string>Orchestra Hit</string>
+		<string>Trumpet</string>
+		<string>Trombone</string>
+		<string>Tuba</string>
+		<string>Muted Trumpet</string>
+		<string>French Horn</string>
+		<string>Brass Section</string>
+		<string>Synth Brass1</string>
+		<string>Synth Brass2</string>
+		<string>Soprano Sax</string>
+		<string>Alto Sax</string>
+		<string>Tenor Sax</string>
+		<string>Baritone Sax</string>
+		<string>Oboe</string>
+		<string>English Horn</string>
+		<string>Bassoon</string>
+		<string>Clarinet</string>
+		<string>Piccolo</string>
+		<string>Flute</string>
+		<string>Recorder</string>
+		<string>Pan Flute</string>
+		<string>Blown Bottle</string>
+		<string>Shakuhachi</string>
+		<string>Whistle</string>
+		<string>Ocarina</string>
+		<string>Square Wave</string>
+		<string>Saw Wave</string>
+		<string>Syn.Calliope</string>
+		<string>Chiffer Lead</string>
+		<string>Charang</string>
+		<string>Solo Vox</string>
+		<string>5th Saw Wave</string>
+		<string>Bass &amp; Lead</string>
+		<string>NewAge Pad</string>
+		<string>Warm Pad</string>
+		<string>Polysynth Pad</string>
+		<string>Choir Pad</string>
+		<string>Bow Pad</string>
+		<string>Metallic Pad</string>
+		<string>Halo Pad</string>
+		<string>Sweep Pad</string>
+		<string>Ice Rain</string>
+		<string>Soundtrack</string>
+		<string>Crystal</string>
+		<string>Atmosphere</string>
+		<string>Brightness</string>
+		<string>Goblin</string>
+		<string>Echo Drops</string>
+		<string>Star Theme</string>
+		<string>Sitar</string>
+		<string>Banjo</string>
+		<string>Shamisen</string>
+		<string>Koto</string>
+		<string>Kalimba</string>
+		<string>Bag Pipe</string>
+		<string>Fiddle</string>
+		<string>Shanai</string>
+		<string>Tinkle Bell</string>
+		<string>Agogo</string>
+		<string>Steel Drums</string>
+		<string>Woodblock</string>
+		<string>Taiko Drum</string>
+		<string>Melodic Tom</string>
+		<string>Synth Drum</string>
+		<string>Reverse Cymbal</string>
+		<string>Gtr. FretNoise</string>
+		<string>Breath Noise</string>
+		<string>Seashore</string>
+		<string>Bird Tweet</string>
+		<string>Telephone</string>
+		<string>Helicopter</string>
+		<string>Applause</string>
+		<string>Gun Shot</string>
+	</array>
+	<key>MetaEvent Keys</key>
+	<array>
+		<string>0</string>
+		<string>1</string>
+		<string>127</string>
+		<string>2</string>
+		<string>3</string>
+		<string>32</string>
+		<string>33</string>
+		<string>4</string>
+		<string>47</string>
+		<string>5</string>
+		<string>6</string>
+		<string>7</string>
+		<string>8</string>
+		<string>81</string>
+		<string>84</string>
+		<string>88</string>
+		<string>89</string>
+		<string>9</string>
+	</array>
+	<key>MetaEvent Names</key>
+	<array>
+		<string>Sequence Num</string>
+		<string>Text</string>
+		<string>Sequencer Specific</string>
+		<string>Copyright</string>
+		<string>Track Name</string>
+		<string>Channel Prefix</string>
+		<string>Select Port</string>
+		<string>Instrument Name</string>
+		<string>End of Track</string>
+		<string>Lyric</string>
+		<string>Marker</string>
+		<string>Cue Point</string>
+		<string>Program Name</string>
+		<string>Set Tempo</string>
+		<string>SMPTE Offset</string>
+		<string>Time Signature</string>
+		<string>Key Signature</string>
+		<string>Device Name</string>
+	</array>
+	<key>SysExManufacturers</key>
+	<array>
+		<string>0</string>
+		<string>SequentialCircuits</string>
+		<string>Big Briar</string>
+		<string>Octave/Plateau</string>
+		<string>Moog</string>
+		<string>Passport Designs</string>
+		<string>Lexicon</string>
+		<string>Kurzweil</string>
+		<string>Fender</string>
+		<string>Gulbransen</string>
+		<string>Delta Labs</string>
+		<string>Sound Comp</string>
+		<string>General Electro</string>
+		<string>Matthews Research</string>
+		<string>Effect control 2</string>
+		<string>15</string>
+		<string>Oberheim</string>
+		<string>PAIA</string>
+		<string>Simmons</string>
+		<string>DigiDesign</string>
+		<string>Fairlight</string>
+		<string>JL Cooper</string>
+		<string>Lowery</string>
+		<string>Lin</string>
+		<string>Emu</string>
+		<string>25</string>
+		<string>26</string>
+		<string>Peavey</string>
+		<string>28</string>
+		<string>29</string>
+		<string>30</string>
+		<string>31</string>
+		<string>BonTempi</string>
+		<string>S.I.E.L.</string>
+		<string>34</string>
+		<string>SyntheAxe</string>
+		<string>Hohner</string>
+		<string>Crumar</string>
+		<string>Solton</string>
+		<string>Jellinghaus Ms</string>
+		<string>CTS</string>
+		<string>PPG</string>
+		<string>42</string>
+		<string>43</string>
+		<string>44</string>
+		<string>45</string>
+		<string>46</string>
+		<string>Elka</string>
+		<string>48</string>
+		<string>49</string>
+		<string>50</string>
+		<string>51</string>
+		<string>52</string>
+		<string>53</string>
+		<string>Cheetah</string>
+		<string>55</string>
+		<string>56</string>
+		<string>57</string>
+		<string>58</string>
+		<string>59</string>
+		<string>60</string>
+		<string>61</string>
+		<string>Waldorf</string>
+		<string>63</string>
+		<string>Kawai</string>
+		<string>Roland</string>
+		<string>Korg</string>
+		<string>Yamaha</string>
+		<string>Casio</string>
+		<string>69</string>
+		<string>Kamiya Studio</string>
+		<string>Akai</string>
+		<string>Victor</string>
+		<string>73</string>
+		<string>74</string>
+		<string>Fujitsu</string>
+		<string>Sony</string>
+		<string>77</string>
+		<string>Teac</string>
+		<string>79</string>
+		<string>Matsushita</string>
+		<string>Fostex</string>
+		<string>Zoom</string>
+		<string>83</string>
+		<string>Matsushita</string>
+		<string>Suzuki</string>
+		<string>Fuji Sound</string>
+		<string>Acoustic Technical Laboratory</string>
+		<string>88</string>
+		<string>89</string>
+		<string>90</string>
+		<string>91</string>
+		<string>92</string>
+		<string>93</string>
+		<string>94</string>
+		<string>95</string>
+		<string>96</string>
+		<string>97</string>
+		<string>98</string>
+		<string>99</string>
+		<string>100</string>
+		<string>101</string>
+		<string>102</string>
+		<string>103</string>
+		<string>104</string>
+		<string>105</string>
+		<string>106</string>
+		<string>107</string>
+		<string>108</string>
+		<string>109</string>
+		<string>110</string>
+		<string>111</string>
+		<string>112</string>
+		<string>113</string>
+		<string>114</string>
+		<string>115</string>
+		<string>116</string>
+		<string>117</string>
+		<string>118</string>
+		<string>119</string>
+		<string>120</string>
+		<string>121</string>
+		<string>122</string>
+		<string>123</string>
+		<string>124</string>
+		<string>125</string>
+		<string>UNRT</string>
+		<string>URT</string>
+	</array>
+</dict>
+</plist>

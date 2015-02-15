@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>QMidi Windows</title>
+	</head>
+
+	<body>
+		<h1>QMidi Windows</h1>
+		<h2>Transport (Player)</h2>
+		<p>This floating window allows you to access the main functions of the player. You can however play your files without using the transport window because all basic transport commands and relative key shortcuts are accessible from the &quot;Player&quot; menu.</p>
+		<h2>Karaoke/Mirror</h2>
+		<p>Karaoke (text or CDG) is displayed in these windows. Both windows have their own formatting options (see &quot;<a href="09_karaoke.html">Karaoke formatting</a>&quot;). The mirror window is normally used on a second monitor in full screen mode.</p>
+		<p>Movies are displayed in the mirror window if opened, otherwise in the karaoke window.</p>
+		<h2>Library</h2>
+		<p>The library allows you to keep track of all your media files using a single window, just like iTunes. You may easily create playlists and filters (smart playlists) using drag &amp; drop. You may then add items using the Add (+) button located at the bottom of the list. You may also drag &amp; drop the files from the Finder onto the list.</p>
+		<p><span class="notabene">NB: Check the &quot;<a href="07_media_management.html">Media Management</a>&quot; help topic to learn the best way to store/move your media files safely.</span></p>
+		<p>By default, double clicking an item (or pressing return while it is selected) will load it and play it immediately. You may disable the &quot;<a href="12_preferences.html#auto_play">Auto Play</a>&quot; option in the QMidi preferences.</p>
+		<ul>
+			<li>If items are ordered by index, you may reorder them by drag &amp; drop. You may also scroll to a desired index by typing its number with the keyboard.</li>
+			<li>If items are ordered by name, you cannot reorder them manually. Typing the first letters of an item will select the first matching occurence.</li>
+		</ul>
+		<p>The search field in the toolbar allows you to quickly filter the current selection.</p>
+		<h3>Importing from iTunes</h3>
+		<p>You can import iTunes playlists or selections by dragging them to the sidebar of the library window.</p>
+		<h2>Play Lists Documents</h2>
+		<p>QMidi still supports playlists documents used in previous versions.</p>
+		<p>When you open more than one file at a time (scan mode), a play list is automatically created and filled. Another way to create a playlist is by choosing the &quot;New List&quot; item in the &quot;File&quot; menu. You may easily import a playlist document into the library by dragging it to the sidebar of the library window.</p>
+		<h2>MIDI Mixer</h2>
+		<p>The mixer allows to view/change most sound parameters in real time. You may change the GM patch (sound) number, volume, balance (pan), reverb level and chorus level on any of the 16 MIDI channels. If the READ button is highlighted (default), all the parameters are read from the MIDI file and sent to the output device. Also, the values of every control of the mixer window are updated in real time.</p>
+		<p>Non GM Patch are displayed in the form [P x Bank y] where x is the patch number and y is the CCO (Control change 0) variation number, or Bank Select MSB. Bank 127 is the MT-32 instruments set of the Roland SoundCanvas (not supported by QT Instruments).</p>
+		<p>To make your own mix, you may follow these steps:</p>
+		<ol>
+			<li>Play the beginning of the MIDI file with the READ button ON to allow device/mixer initialization.</li>
+			<li>Unhighlight the READ button.</li>
+			<li>Make the changes.</li>
+			<li>Save the mixed file by choosing the &quot;Export Current&quot; item from the &quot;File&quot; menu.</li>
+		</ol>
+		<p><span class="notabene">NB: Any existing mix automation will be removed when saving a mix!</span></p>
+		<h3>GS Effects</h3>
+		<p>The GS Effects are an extension of the mixer and allow you to view/change master GS effects parameters. These settings will have effect only on GS compatible MIDI devices, but changes will be saved into the mix.</p>
+		<h2>Lyrics Finder</h2>
+		<p>This window allows you to find lyrics via the &quot;LyrDB&quot; server.</p>
+	</body>
+
+</html>

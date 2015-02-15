@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+	
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" /><title>Karaoke</title></head><body>
+		<h1>Karaoké</h1>
+		<h2>Formatage du texte</h2>
+		<p>Vous pouvez facilement mettre en forme la police, la taille et la couleur du texte karaoké en utilisant le panneau police (&quot;Montrer polices&quot; dans le menu &quot;Karaoké/Police&quot;). Le formatage est appliqué à la fois au texte et aux accords. La visibilité des accords peut être modifiée avec le menu &quot;Karaoké/Accords&quot;.</p>
+		<h3>Taille automatique</h3>
+		<p>Si l'option
+"Taille automatique" est activée, QMidi modifie la taille du texte en
+fonction de la hauteur de la fenêtre afin qu'un nombre constant de
+lignes sont affichées. Les accords peuvent être redimensionnés
+indépendamment en déplaçant le séparateur texte/accords.</p>
+		<h3>Texte enrichi (RTF)<span class="plainText"> (Seulement pour du texte externe)</span></h3>
+		<p>Si cette option est désactivée (par défaut), les paroles sont sauvegardées en texte brut et mis en forme &quot;à la volée&quot; en utilisant le style karaoké/miroir actuel.<br />
+			 Si cette option est activée, le texte est
+sauvegardé en rich text format ("rtf" ou "rtfd"). Vous pouvez mettre ce
+texte en forme uniquement en mode édition.</p>
+		<p>NB:
+Lorsqu'il est ouvert, du texte stylisé avec la même couleur que
+l'arrière-plan est automatiquement réglé en noir ou blanc, selon la
+couleur de l'arrière-plan.</p>
+		<h2>Image d'arrière-plan</h2>
+		<p>Avec le menu &quot;Karaoké/Image de fond&quot;, vous pouvez ajouter une image d'arrière-plan à votre fenêtre karaoké. Vous pouvez aussi faire glisser une image depuis le Finder.</p>
+		<p>Vous pouvez également faire correspondre une image à n'importe quel fichier media:</p>
+		<ol>
+			<li>Copier le fichier image dans le répertoire du fichier media.</li>
+			<li>Renommer le fichier comme le fichier media + extension (jpeg, jpg, png, tiff ou tif).</li>
+		</ol>
+		<h2>Encodage du texte</h2>
+		<p>Si un fichier karaoké a été créé sur d'autres plateformes, les caractères accentués ne s'affichent pas correctement avec l'encodage standard Macintosh. Pour règler ce problème, QMidi vous permet de choisir l'encodage de texte approprié pour n'importe quel fichier karaoké et de sauvegarder votre réglage dans la liste de lecture ou la bibliothèque. Vous pouvez modifier l'encodage par défaut dans la fenêtre <a href="12_preferences.html">Preferences</a>.</p>
+		<h2><a id="editing" name="editing"></a>Ajouter/Editer  paroles et accords</h2>
+		<h3>Ajouter de nouvelles paroles</h3>
+		<ol>
+			<li>Sélectionner &quot;Edition&quot; dans le menu &quot;Karaoké&quot; (la fenêtre karaoké doit être au premier plan).</li>
+			<li>Taper/Coller votre texte. Vous pouvez aussi utiliser la fenêtre "Recherche de paroles" pour trouver et insérer des paroles.</li>
+			<li>Sauvegarder votre travail en choisissant &quot;Enregistrer&quot; dans le menu &quot;Fichier&quot;.</li>
+		</ol>
+		<p>Durant
+cette opération, un fichier texte sera créé dans le répertoire du
+fichier media, avec le même nom que votre fichier media, plus
+l'extension appropriée (txt, rtf, rtfd).</p>
+		<p><img src="../images/ExternalText.png" alt="" border="0" /></p>
+		<h3>Modifier des paroles synchronisées</h3>
+		<p><span>Ne jamais éditer du texte synchroniser en mode &quot;Edition&quot;, sinon vous aller annuler les informations de synchronisation. La meilleure manière d'éditer du texte existant est la suivante:</span></p>
+		<ol>
+			<li><span>Choisir "Synchronisation" dans le menu</span> &quot;Karaoké&quot;.<span> </span></li>
+			<li>Cliquer sur le bouton&quot;Accords&quot; en bas, si vous désirez travailler sur les accords</li>
+            <li>Cliquer sur le bouton "crayon" en bas, pour activer l'édition manuelle<span>.</span></li>
+			<li><span>Double cliquer sur la colonne de texte pour éditer son contenu.</span> <span class="notabene">Les accords doivent être  correctement formatés! (voir &quot;<a href="13_chords.html">Accords</a>&quot;)</span>.</li>
+		</ol>
+		<p><img src="../images/manual_edit.png" alt="" border="0" /></p>
+		<p>La colonne "CR" est utilisée pour ajouter ou supprimer les retours à la ligne.</p>
+		<p>Le comportement du bouton "+" dépend du type de sélection:</p>
+		<ul>
+			<li>Si une rangée est sélectionnée, elle sera dupliquée. Si la colonne "Texte" est éditée, le texte sera coupé au niveau du curseur.</li>
+			<li>Si
+aucune rangée n'est sélectionnée (cliquer avec la touche commande
+appuyée sur une rangée sélectionnée pour la désélectionner), une rangée
+vide sera ajoutée à la fin.</li>
+		</ul>
+		<h3>Ajout de paroles et accords  en mode &quot;Synchronisation&quot; par collage.</h3>
+        <ol>
+          <li><span>Choisir &quot;Synchronisation&quot; dans le menu</span> &quot;Karaoké&quot;.</li>
+          <li>Collez votre texte. Chaque ligne de texte  créera un événement de synchronisation.</li>
+        </ol>
+        <ul>
+          <li>Si une rangée est sélectionnée, les événements seronts inséré avant la sélection.</li>
+          <li>Si
+aucune rangée n'est sélectionnée, les événements seront ajoutés à la fin.</li>
+          <li>Si vous travaillez sur des accords, seuls les accords correctement formattés seront acceptés (voir  &quot;<a href="13_chords.html">Accords</a>&quot;) .</li>
+        </ul>
+        <h3>Edition de paroles incluses</h3>
+		<p><span>QMidi ne permet pas l'édition directe de paroles incluses dans des fichiers MIDI/ID3. (<a href="http://www.mixagesoftware.com/">MidiKit</a> peut le faire sur des fichiers MIDI).</span></p>
+		<p><span>Pour cette raison, si vous choisissez &quot;Synchronisation&quot; dans le menu &quot;Karaoké&quot;, un fichier texte sera créé automatiquement. Si l'option &quot;Synchronisation par lignes&quot; est sélectionnée, QMidi ne gardera que les marqueurs de synchronisation qui pointent au début des lignes.</span><span> </span></p>
+		<p>Si vous travaillez sur un fichier MIDI, vous pourrez fusionner plus tard le texte édité en choisissant &quot;Exporter le fichier courant&quot; et en sélectionnant l'option &quot;Fusionner texte&quot;.</p>
+		<h2>Synchroniser des paroles</h2>
+		<h3>Synchronisation en temps réel</h3>
+		<ol>
+			<li>Choisir “Synchronisation” dans le menu “Karaoké” pour entrer en mode synchronisation.</li>
+			<li>Cliquer sur le bouton "smiley" <img id="smiley" src="../images/smile.png" name="smiley" border="0" /> en bas pour activer le mode synchronisation.</li>
+			<li>Démarrer la lecture.</li>
+			<li>Cliquer sur la ligne que vous voulez synchroniser, au moment voulu (appuyer sur la touche Retour pour avancer d'une ligne).</li>
+			<li>Choisir &quot;Affichage&quot; dans le menu “Karaoké” pour sortir du mode synchronisation.</li>
+			<li>Pour sauvegarder votre travail, choisir "Enregister" dans le menu "Fichier".</li>
+		</ol>
+		<p>Bien sûr, vous pouvez effectuer l'étape 4 quand le lecteur est arrêté. Il n'est pas nécessaire de synchroniser immédiatement tout le texte: vous pouvez ajuster la position des rangées à n'importe quel moment en revenant en arrière et en cliquant au bon moment. Toutes ces actions peuvent être annulées en utilisant le menu &quot;Edition/Annuler&quot;.</p>
+		<p>Astuce: Option-Clic sur une ligne permet de déplacer la tête de lecture a la position correspondante.</p>
+		<h3>Edition manuelle de la synchronisation</h3>
+		<p>Entrer dans le mode de synchronisation et cliquer le bouton "Edition" (crayon) pour activer l'édition manuelle.</p>
+		<p><img src="../images/manual_sync.png" alt="" border="0" /></p>
+		<p>La
+colonne "Temps" est formatée en mesure:temps:ticks pour les fichiers
+MIDI et HH:MM:SS:centièmes de secondes pour les autres media.</p>
+	</body></html>

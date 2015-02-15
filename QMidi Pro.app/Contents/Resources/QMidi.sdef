@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<suite name="QMidi Suite" code="hook" description="The event suite specific to QMidi">
+		<class name="application" code="capp" description="The application&apos;s top-level scripting object.">
+			<cocoa class="NSApplication"/>
+			<property name="name" code="pnam" description="The name of the application." type="text" access="r"/>
+			<property name="frontmost" code="pisf" description="Is this the active application?" type="boolean" access="r">
+				<cocoa key="isActive"/>
+			</property>
+			<property name="version" code="vers" description="The version number of the application." type="text" access="r"/>
+			<responds-to command="play">
+				<cocoa method="handlePlayScriptCommand:"/>
+			</responds-to>
+			<responds-to command="fast forward">
+				<cocoa method="handleFastForwardScriptCommand:"/>
+			</responds-to>
+			<responds-to command="next track">
+				<cocoa method="handleNextTrackScriptCommand:"/>
+			</responds-to>
+			<responds-to command="toggle playback">
+				<cocoa method="handleTogglePlaybackScriptCommand:"/>
+			</responds-to>
+			<responds-to command="previous track">
+				<cocoa method="handlePreviousTrackScriptCommand:"/>
+			</responds-to>
+			<responds-to command="resume">
+				<cocoa method="handleResumeScriptCommand:"/>
+			</responds-to>
+			<responds-to command="rewind">
+				<cocoa method="handleRewindScriptCommand:"/>
+			</responds-to>
+			<responds-to command="stop">
+				<cocoa method="handleStopScriptCommand:"/>
+			</responds-to>
+			<responds-to command="load selected track">
+				<cocoa method="handleLoadSelectedTrackCommand:"/>
+			</responds-to>
+		</class>
+		<command name="fast forward" code="hookFast" description="skip forward in a playing track"/>
+		<command name="next track" code="hookNext" description="advance to the next track in the current playlist"/>
+		<command name="play" code="hookPlay" description="play the current track"/>
+		<command name="toggle playback" code="hookTgPl" description="Toggle playback state"/>
+		<command name="previous track" code="hookPrev" description="return to the previous track in the current playlist"/>
+		<command name="resume" code="hookResu" description="disable fast forward and resume playback, if playing."/>
+		<command name="rewind" code="hookRwnd" description="skip backwards in a playing track"/>
+		<command name="stop" code="hookStop" description="stop playback"/>
+		<command name="load selected track" code="hookLoad" description="load selected track in the current playlist (and play if auto play is enabled)"/>
+	</suite>
+</dictionary>

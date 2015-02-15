@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Media Management</title>
+	</head>
+
+	<body>
+		<h1>Media Management</h1>
+		<p>If you plan to use QMidi's library or playlist documents to organize your media files, you should follows some rules to avoid &quot;missing file&quot; errors when transferring your stuff to another computer or disk. Because library and playlists contain &quot;aliases&quot; to the media, it is very important to keep the relative position between media files and library/playlists during copy/move operation.</p>
+		<h2>Media Location</h2>
+		<h3>Playlist documents</h3>
+		<p>The recommended procedure to create a playlist is:</p>
+		<ul>
+			<li>Choose a common root folder which will contain both playlists and media files.</li>
+			<li>Move all media files inside this folder. You may of course use any subfolder hierarchy here.</li>
+			<li>Load the media files in the playlist and save it at the top level of the root folder.</li>
+		</ul>
+		<h3>Library</h3>
+		<p>The library database is saved in the &quot;(Home)/Music/QMidi&quot; directory and must remain there so that QMidi can access it. Therefore this location can be used as root folder, allowing you to move it safely from one account (computer) to another.</p>
+		<p><img src="../images/library_location.png" alt="" border="0" /></p>
+		<p>The library can of course also point to files located in other places (like the iTunes folder or the Movies folder): It is not necessary to move them inside QMidi's folder. The important thing to keep in mind is that you'll have to transfer all the things without changing the relative positions of the various elements. If all your media files are located in your home folder, you can safely use the Apple's <a href="http://support.apple.com/kb/HT4413?viewlocale=en_US">Migration Assistant</a> to transfer your data from one computer to another.</p>
+		<h2>iTunes Library</h2>
+		<p>As explained in the &quot;Media Location&quot; chapter, you can safely add iTunes media to your playlist/library. However, the iTunes &quot;Keep Media folder organized&quot; feature may cause some problems:</p>
+		<p><img src="../images/iTunes_organized%20.png" alt="" border="0" /></p>
+		<p>When you modify either the artist, album or track/disc tags, iTunes will move/rename the media file alone, leaving the QMidi linked files at their original place/name. QMidi makes its best to notify the user of such situation, but it would be a good idea to disable this feature.</p>
+		<p>You can import iTunes playlists or selections by dragging them to the sidebar of the library window.</p>
+		<h2><a id="copying" name="copying"></a>Media Moving/Copying</h2>
+		<h3>Playlist documents</h3>
+		<p>If you followed the &quot;Media Location&quot; rules explained before, your files hierarchy should be like this:</p>
+		<p><img src="../images/MediaLocation.png" alt="" border="0" /></p>
+		<p></p>
+		<p>Before moving/copying the root &quot;QMidi&quot; folder you should refresh any playlist it contain: This is done by holding down the option key while opening the playlist(s). This action is similar to the iTunes &quot;Consolidate Library&quot; feature.</p>
+		<p>After that it will be ok to move the entire &quot;QMidi&quot; folder on another computer/disk without loosing the playlist relative references. At last, you should refresh the copied playlists.</p>
+		<p><span class="notabene">NB: Because QMidi saves sync information in the text file <a href="http://en.wikipedia.org/wiki/Resource_fork">resource fork</a>, you can store them only on <a href="http://en.wikipedia.org/wiki/Hierarchical_File_System">HFS</a> (Mac) formatted volumes.</span></p>
+		<h3>Library</h3>
+		<p>Same logic used here: Before and after a transfer operation you should refresh the library's references: this is done by holding down the option key while starting up QMidi.</p>
+		<h2>Sharing Library</h2>
+		<p>Because QMidi's library's location is hard coded, it is not easy to share one library between different accounts of your computer.</p>
+		<p>There is however a workaround (for advanced users):</p>
+		<ul>
+			<li>Move the &quot;(Home)/Music/QMidi&quot; folder to &quot;/Users/Shared/&quot; (or any other place accessible by all users).</li>
+			<li>Assign &quot;Everyone Read/Write&quot; privileges at the whole content of the moved folder.</li>
+			<li>Place a symbolic link (NOT an alias) of the moved folder in the &quot;(Home)/Music/&quot; folder of every user who have to access the shared library. (the link must be named &quot;QMidi&quot;).</li>
+		</ul>
+		<p>As said before, if your library refers to media files outside the shared QMidi's library folder, you must maintain relative positions during transfer on another computer. Good luck!</p>
+	</body>
+
+</html>

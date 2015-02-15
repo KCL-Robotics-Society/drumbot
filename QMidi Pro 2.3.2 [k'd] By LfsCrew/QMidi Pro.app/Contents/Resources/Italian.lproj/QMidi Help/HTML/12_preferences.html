@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Preferenze</title>
+	</head>
+
+	<body>
+		<h1>Preferenze</h1>
+		<h2>Generali</h2>
+		<h3>Apri file all'avvio</h3>
+		<p>Se questa opzione è attivata, QMidi presenterà la finestra di dialogo &quot;Apri&quot; in fase di avvio.</p>
+		<h3><a id="auto_play" name="auto_play"></a>Auto play</h3>
+		<p>Se questa opzione è abilitata (default), QMidi inizierà immediatamente la riproduzione del brano caricato. La disattivazione di questa funzione può essere utile per effettuare il &quot;preroll&quot; del brano, permettendo un avvio instantaneo al momento desiderato.</p>
+		<h3>Mostra sempre contenuti video/CDG</h3>
+		<p>Se questa opzione è abilitata (default), QMidi mostrerà automaticamente la finestra di karaoke durante la riproduzione video/CDG.</p>
+		<h3>Registra cronologia dei brani</h3>
+		<p>Questa opzione abilita la registrazione della cronologia di riproduzione nel file log di QMidi. Ogni canzone caricata genera un record con il formato &lt;data&gt; &lt;ora&gt; &lt;titolo&gt;. Questo può essere utile per tenere traccia dei brani suonati durante uno spettacolo. Il file log si trova nella cartella (home)/Libreria/Logs/ e può essere visualizzato scegliendo &quot;Log&quot; dal menu &quot;Finestre&quot; (normalmente tramite l'applicazione Console).</p>
+		<h2>Player</h2>
+		<h3>Messaggi di reset</h3>
+		<p>Determinano come il dispositivo MIDI viene inizializzato per evitare che le impostazioni del brano precedente influenzino il brano attualmente in riproduzione. Scegliere una o più delle seguenti opzioni:</p>
+		<ul>
+			<li>GM - Selezionare questo messaggio se si utilizza un sintetizzatore GM, ma non compatibile GS/XG.</li>
+			<li>GS - Usare questo messaggio per sintetizzatori Roland GS compatibili XG e dispositivi in modalità GS.</li>
+			<li>XG - Questo messaggio è adatto ai dispositivi Yamaha XG in modalità XG.</li>
+		</ul>
+		<p>È possibile inviare manualmente i messaggi di reset selezionati scegliendo &quot;Resetta dispositivo&quot; dal menu &quot;Player&quot;.</p>
+		<h3>Invia &quot;All Sounds Off&quot; allo stop</h3>
+		<p>Se quest'opzione è abilitata (default), QMidi invierà il messaggio di controllo &quot;All Sounds Off&quot; quando si preme il pulsante di stop. Se l'apparato MIDI collegato supporta questo tipo di commando, interromperà immediatamente tutti i suoni (per esempio code dei piatti della batteria, riverberi, etc). Da non confondere con il messaggio &quot;All Notes Off&quot; che viene sempre inviato!</p>
+		<h3>Inizia dalla prima nota</h3>
+		<p>Se quest'opzione è abilitata, QMidi salterà ogni silenzio all'inizio di un file MIDI e inizierà immediatamente la riproduzione con la prima nota.</p>
+		<h3>Aspetta xx millisecondi prima di iniziare</h3>
+		<p>Poiché i sintetizzatori hanno bisogno di tempo per elaborare i messaggi di inizializzazione, può essere necessario dare loro un lasso di tempo prima di cominciare la riproduzione. Utilizzare il minimo valore utile qui!</p>
+		<h3>Abilita funzione chase</h3>
+		<p>La funzione Chase garantisce che gli strumenti MIDI suonino correttamente quando si colloca la barra di trasporto in una nuova posizione e s’avvia la riproduzione. Per farlo, il programma trasmette agli strumenti MIDI una serie di messaggi MIDI ogni volta che nel progetto ci si sposta ad una nuova posizione, assicurando così che tutti i dis- positivi MIDI siano configurati opportunamente per quanto riguarda eventi Program Change, Controller (come il Volume MIDI), ecc.</p>
+		<h3>Salta dati in ridondanza</h3>
+		<p>Questa funzione è abilitata di default e non dovrebbe essere disattivata.</p>
+		<h2>Karaoke</h2>
+		<h3>Notazione Accordi</h3>
+		<p>Questa opzione consente di scegliere quale notazione utilizzare per gli accordi.</p>
+		<h3>Codifica testo di default</h3>
+		<p>La codifica specificata qui sarà utilizzata come impostazione predefinita quando si aggiungono file ad una playlist o quando si carica un file dal Finder. Questa potrà comunque essere modificata di seguito scegliendo la voce &quot;Codifica&quot; del menu &quot;Karaoke&quot;. È possibile personalizzare l'elenco codifiche.</p>
+		<h3>Su testo formattato usa</h3>
+		<p>Scegliere qui se utilizzare l'icona &quot;smiley&quot; invece del colore su testo formattato (RTF).</p>
+		<h3>Mostra divisore Testo/Accordi</h3>
+		<p>Rende visibile o meno il divisore tra testo e accordi.</p>
+	</body>
+
+</html>

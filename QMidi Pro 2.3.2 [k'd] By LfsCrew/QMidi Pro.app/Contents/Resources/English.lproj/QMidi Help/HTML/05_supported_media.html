@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Supported Media</title>
+	</head>
+
+	<body>
+		<h1>Supported Media</h1>
+		<h2>Supported File Formats</h2>
+		<ul>
+			<li>MIDI files format 0 and 1 (.mid .kar).</li>
+			<li>Audio files formats supported by OS X Core Audio. This includes AIFF, Waves, AAC, Apple Lossless, MP3.</li>
+			<li>FLAC files (up to 24bit/96Khz).</li>
+			<li>Video/Audio formats supported by QuickTime. You can extend supported file formats by installing third party &quot;QuickTime Components&quot; like these:
+				<ul>
+					<li type="disc"><a href="http://perian.org/">Perian</a> (FLV and a lot of others)</li>
+					<li type="disc"><a href="http://www.telestream.net/">Flip4Mac</a> (WMV, AVI)</li>
+				</ul>
+			</li>
+		</ul>
+		<h3><a id="midi_sync" name="midi_sync"></a>Playing a MIDI file in sync with an Audio/Video file (<span class="qmidipro">QMidi Pro only</span>)</h3>
+		<ol>
+			<li>Copy the MIDI file to the AV file's directory.</li>
+			<li>Rename it as the AV file, adding &quot;mid&quot; or &quot;kar&quot; as extension.</li>
+			<li>Launch the AV file. The MIDI will be played perfectly in sync.</li>
+		</ol>
+		<h2>Supported Karaoke Formats</h2>
+		<h3>Text</h3>
+		<p>The more common karaoke format. Karaoke lyrics are stored as text inside the media file. QMidi supports many MIDI karaoke formats and also reads MP3 ID3 lyrics (SYLT, Lyrics3).</p>
+		<h3>Movie</h3>
+		<p>You can find a lot of karaoke files in movie format. QMidi can display any movie readable by Mac OS QuickTime.</p>
+		<h3>CDG</h3>
+		<p>QMidi supports playback of &quot;ripped&quot; CDG files: If a CDG file is paired with the audio file (&quot;songname.mp3&quot; &lt;=&gt; &quot;songname.cdg&quot;), CDG graphics are displayed in the karaoke/mirror windows.</p>
+		<p>NB: QMidi cannot read directly from CD+G compact discs. You should first extract the Audio+CDG files with dedicated softwares.</p>
+	</body>
+
+</html>

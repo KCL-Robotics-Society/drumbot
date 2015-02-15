@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Finestre di QMidi</title>
+	</head>
+
+	<body>
+		<h1>Finestre di QMidi</h1>
+		<h2>Trasporto (Player)</h2>
+		<p>Questa finestra fluttuante permette di accedere alle principali funzioni del player. E' comunque possibile utilizzare QMidi senza questa finestra, in quanto tutti i comandi, e relative <a href="11_shortcuts.html">scorciatoie di tastiera,</a> sono accessibili dal menu &quot;Player&quot;.</p>
+		<h2>Karaoke/Mirror</h2>
+		<p>Il karaoke (testo o CDG) viene visualizzato in queste finestre. Entrambe le finestre hanno le loro proprie opzioni di formattazione (vedi &quot;<a href="09_karaoke.html">Karaoke</a>&quot;). La finestra mirror è normalmente utilizzata a tutto schermo su un secondo monitor.</p>
+		<p>I filmati vengono visualizzati nella finestra mirror se aperta, altrimenti nelle finestra karaoke.</p>
+		<h2>Libreria</h2>
+		<p>La libreria permette di tenere traccia di tutti i file multimediali utilizzando una singola finestra simile a quella di iTunes. Per caricare i file si usa il pulsante (+) situato in fondo alla lista. È possibile anche trascinare e rilasciare i file dal Finder. Si possono creare playlist e filtri (playlist smart) tramite il pulsante (+) sotto la barra laterale.</p>
+		<p><span class="notabene">NB: Leggi la sezione &quot;<a href="07_media_management.html">Gestione Media</a>&quot; dell'aiuto per imparare il modo più sicuro di archiviare/spostare i file multimediali.</span></p>
+		<p>Come impostazione predefinita, facendo doppio clic su un elemento della lista (o premendo il tasto invio mentre è selezionato), il file corrispondente verrà caricato e riprodotto immediatamente. È possibile disabilitare questa funzione (Auto Play) nelle preferenze di QMidi.</p>
+		<ul>
+			<li>Se gli elementi di una playlist sono ordinati per indice, è possibile riordinarli tramite drag &amp; drop. È inoltre possibile scorrere fino all'indice desiderato digitando il relativo numero con la tastiera.</li>
+			<li>Se gli elementi sono ordinati per nome, si possono digitare le prime lettere del nome per selezionare il primo elemento corrispondente.</li>
+		</ul>
+		<p>Il campo di ricerca situato nella barra degli strumenti consente di effettuare veloci ricerche sui principali campi descrittivi.</p>
+		<h3>Importazione da iTunes</h3>
+		<p>Si possono importare playlist/selezioni da iTunes semplicemente trascinandole sulla barra laterale della libreria.</p>
+		<h2>Documenti Playlist</h2>
+		<p>QMidi supporta ancora il formato di playlist utilizzato nelle versioni precedenti.</p>
+		<p>Quando si aprono (dal menu &quot;Archivio/Apri&quot;) una cartella o più di un file, una playlist viene automaticamente creata. E' possibile creare una playlist anche scegliendo la voce &quot;Nuova Lista&quot; dal menu &quot;Archivio&quot;.</p>
+		<p>Si possono importare i documenti playlist nella libreria semplicemente trascinandoli sulla barra laterale della stessa.</p>
+		<h2>Mixer MIDI</h2>
+		<p>Il mixer permette di visualizzare e modificare diversi parametri del suono in tempo reale. E' possibile cambiare strumento (nomi GM da 1 a 128), volume, bilanciamento stereo (pan) e livello di riverbero/chorus su uno qualsiasi dei 16 canali MIDI. Se il pulsante &quot;READ&quot; è attivo (default), tutti i parametri vengono letti dal file MIDI e inviati al dispositivo di output. I valori di ogni controllo della finestra del mixer sono aggiornati in tempo reale.</p>
+		<p>Gli strumenti non GM vengono visualizzati nella forma [P x Bank y] dove &quot;x&quot; è il numero di programma e &quot;y&quot; è il numero di Control Change 0, o numero di banco (Bank Select MSB). Il Banco 127 corrisponde al set di strumenti MT-32 di Roland (non supportato dal sintetizzatore QuickTime).</p>
+		<p>Per modificare e salvare un mix, si può seguire questa procedura:</p>
+		<ol>
+			<li>Ascoltare l'inizio del file MIDI con il tasto &quot;READ&quot; attivato per caricare il mix registrato nel file.</li>
+			<li>Disattivare il pulsante &quot;READ&quot;.</li>
+			<li>Effettuare le modifiche.</li>
+			<li>Salvare il mix dal menu &quot;Archivio/Esporta corrente&quot;.</li>
+		</ol>
+		<p><span class="notabene">NB: Qualsiasi automazione di missaggio sui parametri gestiti dal mixer verrà cancellata con questa operazione!</span></p>
+		<h3>Effetti GS</h3>
+		<p>Questa parte del mixer consente di visualizzare/modificare gli effetti master GS. Queste impostazioni hanno effetto solo su dispositivi MIDI compatibili GS, ma eventuali modifiche saranno comunque salvate nel mix.</p>
+		<h2>Cerca Testi</h2>
+		<p>Questa finestra permette di ricercare i testi delle canzoni sul server &quot;LyrDB&quot;.</p>
+	</body>
+
+</html>

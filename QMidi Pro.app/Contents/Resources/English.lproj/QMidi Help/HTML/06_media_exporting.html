@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Media Exporting</title>
+	</head>
+
+	<body>
+		<h1>Media Exporting</h1>
+		<p>QMidi allows you to export media to various formats. This operation is done by choosing &quot;Export Current…&quot; from the file menu. Modifications on time stretch / pitch transpose are automatically applied to exported files. The available export formats depends on the source media type.</p>
+		<h2>MIDI To Any</h2>
+		<h3>Save Mix</h3>
+		<p>The current mix is saved to the destination file. Because the mix is &quot;static&quot;, any automation previously present in the file will be lost.</p>
+		<h3>Remove Muted Channels</h3>
+		<p>The MIDI events targeting the currently muted channels will be ignored.</p>
+		<h2>MIDI To MIDI</h2>
+		<h3><a id="merge" name="merge"></a>Merge Text</h3>
+		<p>This option is available only if an external text file is linked to the current song. It allows you to &quot;embed&quot; the synced text in the destination file (as lyrics meta events).</p>
+		<h2>Any To Audio</h2>
+		<p>Exported audio format can be either AIFF, WAVE, AAC o Apple Lossless. MIDI files are rendered using the selected DLS Music Device <a href="02_midi_settings.html#DLS">SoundFont</a>.		</p>
+		<h3>Merge Text (MP3 only)</h3>
+        <p>This option is available only if an external text file is linked to the current song. It allows you to &quot;embed&quot; the synced text in the destination file (as SYLT ID3 tag).		</p>
+        <p><span class="notabene">NB: MP3 format is enable only if the source file is already in MP3 format and no audio processing (pitch/tempo change) is needed .</span></p>
+        <h2>AUDIO/MIDI To QuickTime Movie</h2>
+		<p>If there is any visual content (text karaoke, CDG), this will be exported in the video track of the movie. Otherwise the movie will only contain the audio track.</p>
+		<ul>
+			<li>Text karaoke can be saved using several resolutions (including the current karaoke window size).</li>
+			<li>CDG graphics are always saved at their native resolution (300 * 216 pixels).</li>
+		</ul>
+	<h2>Text Karaoke To LRC and ChordPro</h2>
+		<p>You can here export the karaoke text to the <a href="http://en.wikipedia.org/wiki/LRC_(file_format)">LRC, LRC Enhanced</a> and <a href="http://webchord.sourceforge.net">ChordPro</a> Formats.</p>
+	</body>
+
+</html>

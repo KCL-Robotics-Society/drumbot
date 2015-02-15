@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="../css/custom_style.css" type="text/css" rel="stylesheet" />
+		<title>Preferences</title>
+	</head>
+
+	<body>
+		<h1>Preferences</h1>
+		<h2>General</h2>
+		<h3>Open dialog at startup</h3>
+		<p>If this option is enabled, QMidi will present the &quot;Open&quot; dialog at startup.</p>
+		<h3><a id="auto_play" name="auto_play"></a>Auto play</h3>
+		<p>If this option is enabled (default), QMidi will immediately play a song as it is loaded. Disabling this feature may be useful to &quot;preroll&quot; a song, allowing a faster start at the desired time.</p>
+		<h3>Auto open movie window</h3>
+		<p>If this option is enabled (default), QMidi will automatically show the karaoke window when playing video/CDG.</p>
+		<h3>Enable playback history</h3>
+		<p>This option enables recording of playback history into QMidi's log file. Every launched song generates a record formatted as &lt;date&gt; &lt;time&gt; &lt;title&gt;. This can be useful to track which song you have played during a Gig. The log file is located in the (home)/Library/Logs/ directory and it can be viewed by choosing &quot;Log&quot; from the &quot;Window&quot; menu (typically by the Console application).</p>
+		<h2>Player</h2>
+		<h3>Additional reset messages</h3>
+		<p>Determines how the MIDI device is reset between songs to prevent settings from the previous file from affecting the currently playing song. Choose one or more of the following options:</p>
+		<ul>
+			<li>GM - Select this choice if you are using an external synthesizer or add-on board which is GM but neither GS nor XG compatible.</li>
+			<li>GS - Use this for Roland GS compatible synthesizers and XG devices in GS mode.</li>
+			<li>XG - This is the right setting for Yamaha XG devices in XG mode.</li>
+		</ul>
+		<p>You may also manually send the currently selected reset messages by choosing &quot;Reset Device&quot; from the &quot;Player&quot; menu.</p>
+		<h3>Send &quot;All Sounds Off&quot; on stop</h3>
+		<p>If this option is enabled (default), QMidi will send the control message &quot;All Sounds Off&quot; when you press the stop button. If the connected MIDI device supports this type of command, it will immediately stop all sounds (for example cymbals queues, reverb, etc.). Not to be confused with the message &quot;All Notes Off&quot; which is always sent!</p>
+		<h3>Play from first note</h3>
+		<p>If this option is enabled, QMidi will skip any silence at the beginning of a MIDI file and start immediately at the first note.</p>
+		<h3>Pause before start</h3>
+		<p>Because synthesizers need some time to process initialization messages, it may be necessary to give them some delay before actually starting playback. Use the shortest value here!</p>
+		<h3>Chase events</h3>
+		<p>When this function is turned on, QMidi transmits a number of MIDI messages to your synthesizers each time you move to a new position in your Song. It does this so that all MIDI units should be set up correctly with regards to Program Change, Controller messages (such as MIDI Volume) etc.</p>
+		<h3>Filter redundant MIDI messages</h3>
+		<p>This feature is enabled by default and should not be deactivated.</p>
+		<h2>Karaoke</h2>
+		<h3>Chords notation</h3>
+		<p>This option allows you to choose chords notation.</p>
+		<h3>Default encoding</h3>
+		<p>This encoding will be used as default when adding MIDI/Audio files to a play list or when launching a MIDI file. Actual encoding may be modified choosing the &quot;Encoding&quot; item of the &quot;Karaoke&quot; menu. You can customize the encodings list.</p>
+		<h3>On rich text use</h3>
+		<p>You may want to use the smiley icon on rich text instead of coloring.</p>
+		<h3>Draw text/chords divider</h3>
+		<p>Toggle text/chords area divider visibility.</p>
+	</body>
+
+</html>
